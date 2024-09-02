@@ -3,6 +3,7 @@ tags: speaker
 crewAtEvent: ["NZ Tech Rally 2024", "NZTestingConf 2024", "NZ Tech Rally 2023"]
 firstName: Prae
 lastName: Songprasit
+fullName: "{{ firstName }} {{ lastName }}"
 pronouns: She/Her
 role: Co-founder
 jobTitle: Lead Engineer
