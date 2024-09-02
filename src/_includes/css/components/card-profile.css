@@ -45,15 +45,16 @@
 
 .card-profile__info,
 .card-profile__info p,
-.card-profile__name {
+.card-title--talk-name {
   margin-bottom: 0;
   font-size: var(--font-size-main);
 }
 
-.card-profile__name {
+.card-title--talk-name {
   font-weight: var(--font-weight-semi-bold);
   font-size: 18px; /* Special one-off */
   line-height: 1.2;
+  margin-bottom: var(--spacing-small);
 }
 
 /* Profile card - horizontal */
@@ -109,15 +110,15 @@
   text-decoration: none;
 }
 
-.card .card-profile__link:visited .card-profile__name {
+.card .card-profile__link:visited .card-title--talk-name {
   color: var(--colour-link-visited);
 }
 
-.card .card-profile__link .card-profile__name {
+.card .card-profile__link .card-title--talk-name {
   color: var(--colour-link);
 }
 
-.card .card-profile__link:hover .card-profile__name {
+.card .card-profile__link:hover .card-title--talk-name {
   text-decoration: underline;
 }
 
