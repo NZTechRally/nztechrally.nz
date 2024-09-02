@@ -1,6 +1,7 @@
 ---
 firstName: Ruth
 lastName: McDavitt
+fullName: "{{ firstName }} {{ lastName }}"
 pronouns: She/Her
 jobTitle: "CEO"
 organisation: "Summer of Tech"

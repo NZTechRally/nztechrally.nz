@@ -9,6 +9,7 @@ crewAtEvent:
   ]
 firstName: Aaron
 lastName: Hodder
+fullName: "{{ firstName }} {{ lastName }}"
 pronouns: He/Him
 role: Lead organiser
 jobTitle: 

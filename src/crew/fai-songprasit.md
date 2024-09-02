@@ -2,6 +2,7 @@
 crewAtEvent: ["NZ Tech Rally 2025", "NZTestingConf 2024"]
 firstName: Fai
 lastName: Songprasit
+fullName: "{{ firstName }} {{ lastName }}"
 pronouns: She/Her
 role: Catering Lead
 jobTitle: 

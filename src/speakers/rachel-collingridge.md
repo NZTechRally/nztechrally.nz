@@ -1,12 +1,16 @@
 ---
 firstName: Rachel
 lastName: Collingridge
+fullName: "{{ firstName }} {{ lastName }}"
 pronouns: She/Her
 jobTitle: "Head of Engineering"
 organisation: "Totara"
 profileUrl:
   [
-    { "name": "LinkedIn", "url": "https://www.linkedin.com/in/rachel-collingridge/" },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/rachel-collingridge/",
+    },
   ]
 profilePhoto: /assets/images/speakers/Rachel_Collingridge.jpg
 profilePhotoAltText: "Straight-haired, blue-eyed, freckly middle-aged Pakeha woman playing the saxophone."

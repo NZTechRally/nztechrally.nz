@@ -2,6 +2,7 @@
 crewAtEvent: ["NZ Tech Rally 2025"]
 firstName: Tarannum
 lastName: Hasan
+fullName: "{{ firstName }} {{ lastName }}"
 pronouns: She/Her
 role: Designer
 profileUrl:

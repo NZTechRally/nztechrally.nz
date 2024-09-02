@@ -1,6 +1,7 @@
 ---
 firstName: Bron
 lastName: Thomson
+fullName: "{{ firstName }} {{ lastName }}"
 pronouns: She/Her
 jobTitle: "Founder and Executive Director"
 organisation: "Springload Te Pipītanga"

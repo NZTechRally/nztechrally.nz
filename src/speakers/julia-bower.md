@@ -1,6 +1,7 @@
 ---
 firstName: Julia
 lastName: Bower
+fullName: "{{ firstName }} {{ lastName }}"
 pronouns: She/Her
 jobTitle: "Co-Founder & Engineer"
 organisation: "The Fractional Directory & Serko"

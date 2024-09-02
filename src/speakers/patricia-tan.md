@@ -1,6 +1,7 @@
 ---
 firstName: Patricia
 lastName: Tan
+fullName: "{{ firstName }} {{ lastName }}"
 pronouns: She/Her
 jobTitle: "Senior Product Designer"
 organisation: "RUSH Digital"
