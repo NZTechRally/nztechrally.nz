@@ -2,6 +2,7 @@
 crewAtEvent: ["NZ Tech Rally 2025", "NZTestingConf 2024", "NZ Tech Rally 2023"]
 firstName: Tim
 lastName: Turnidge
+fullName: "{{ firstName }} {{ lastName }}"
 role: Designer
 pronouns: He/Him
 jobTitle: Lecturer
