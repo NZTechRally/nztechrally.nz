@@ -3,6 +3,7 @@
   --typeface-display: "JetBrains Mono", monospace;
 
   --font-weight-normal: 400;
+  --font-weight-semi-bold: 500;
   --font-weight-bold: 700;
   --font-weight-extra-bold: 800; /* Only for display typeface */
 
