@@ -51,7 +51,9 @@
 }
 
 .card-profile__name {
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-semi-bold);
+  font-size: 18px; /* Special one-off */
+  line-height: 1.2;
 }
 
 /* Profile card - horizontal */
