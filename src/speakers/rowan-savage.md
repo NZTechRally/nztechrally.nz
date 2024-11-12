@@ -1,6 +1,7 @@
 ---
 firstName: Rowan
 lastName: Savage
+fullName: "{{ firstName }} {{ lastName }}"
 pronouns: He/Him
 jobTitle: "Co-founder & CTO"
 organisation: "Runn.io"

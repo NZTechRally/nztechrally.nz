@@ -1,6 +1,7 @@
 ---
 firstName: Nav
 lastName: Rao
+fullName: "{{ firstName }} {{ lastName }}"
 pronouns: He/Him
 jobTitle: Product Engineer
 organisation:
