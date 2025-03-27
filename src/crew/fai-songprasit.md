@@ -1,5 +1,5 @@
 ---
-crewAtEvent: ["NZ Tech Rally 2025, NZTestingConf 2024"]
+crewAtEvent: ["NZ Tech Rally 2025", "NZTestingConf 2024"]
 firstName: Fai
 lastName: Songprasit
 pronouns: She/Her

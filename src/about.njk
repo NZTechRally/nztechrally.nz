@@ -129,11 +129,11 @@ featuredImageHeight:
 
     <section>
       <div class="section-label accent-border">
-        <h2 class="section-title">Meet our crew</h2>
+        <h2 class="section-title">Meet this year's crew</h2>
       </div>
 
       <ul class="cards profiles profiles--three-columns">
-        {% for crewMember in collections.crew %}
+        {% for crewMember in collections.crew | getCurrentCrew('NZ Tech Rally 2025') %}
           {{ card(crewMember, horizontal='true') }}
         {% endfor %}
 
@@ -153,6 +153,18 @@ featuredImageHeight:
             </a>
           </p>
         </li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="section-label accent-border">
+        <h2 class="section-title">Our past crew</h2>
+      </div>
+
+      <ul class="cards profiles profiles--three-columns">
+        {% for crewMember in collections.crew | getPastCrew('NZ Tech Rally 2025') %}
+          {{ card(crewMember, horizontal='true') }}
+        {% endfor %}
       </ul>
     </section>
   </main>

@@ -118,7 +118,7 @@ module.exports = function (eleventyConfig) {
       .sort((a, b) => a.data.order - b.data.order);
   });
 
-  eleventyConfig.addCollection("speakers2024", (collection) => {
+  eleventyConfig.addCollection("speakers2025", (collection) => {
     return collection.getFilteredByTag("speaker2025");
   });
 
@@ -130,6 +130,18 @@ module.exports = function (eleventyConfig) {
     return collection
       .getFilteredByTag("crew")
       .sort((a, b) => a.data.order - b.data.order);
+  });
+
+  eleventyConfig.addFilter("getCurrentCrew", (collection, crewAtEvent) => {
+    return collection.filter((crew) =>
+      crew.data.crewAtEvent.includes(crewAtEvent)
+    );
+  });
+
+  eleventyConfig.addFilter("getPastCrew", (collection, crewAtEvent) => {
+    return collection.filter(
+      (crew) => !crew.data.crewAtEvent.includes(crewAtEvent)
+    );
   });
 
   eleventyConfig.addCollection("talks", (collection) => {

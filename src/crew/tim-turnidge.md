@@ -1,5 +1,5 @@
 ---
-crewAtEvent: ["NZ Tech Rally 2025", "NZTestingConf 2024", "NZ Tech Rally 2023"]
+crewAtEvent: ["NZ Tech Rally 2024", "NZTestingConf 2024", "NZ Tech Rally 2023"]
 firstName: Tim
 lastName: Turnidge
 role: Designer
