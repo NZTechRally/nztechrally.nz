@@ -7,13 +7,10 @@ talkExcerpt: "<p>Since Covid hit the world of work has fundamentally changed. Ho
 
 <p>In this talk, founder and co-CEO Bron Thomson will share the challenges, upheaval, and resilience Springload Te Pipītanga has experienced since the beginning of 2020, what they’ve done to pull through, and how they’re now focused on embracing the unknown; robots and all.</p>
 "
-talkStartTime: 2025-05-16T11:15:00.000+13
-talkEndTime: 2025-05-16T11:45:00.000+13
-contentLength: 25 mins
-featuredImage: /assets/images/talks/2024/and-then-the-robots-came.jpg
-featuredImageAlt: "NZ Tech Rally. And then the robots came. A talk by Bron Thomson, Founder and Co-CEO @ Springload. Friday 16th May 2025 @ Tākina, Wellington"
+featuredImage: /assets/images/talks/2025/and-then-the-robots-came.jpg
+featuredImageAlt: "Bron's picture with text: NZ Tech Rally. And then the robots came. A talk by Bron Thomson, Founder and Co-CEO of @ Springload Te Pipītanga"
 featuredImageType: image/jpg
-featuredImageWidth: 1200
-featuredImageHeight: 630
+featuredImageWidth: 1280
+featuredImageHeight: 720
 talkRecordingID:
 ---

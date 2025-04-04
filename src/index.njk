@@ -1,7 +1,7 @@
 ---
 tags: page
 title: NZ Tech Rally 2025 - 16th May
-description: Resilience of people, communities, and organisations in the Aotearoa software industry.
+description: Inclusive spaces for the NZ software community to celebrate, connect and grow together.
 ---
 {% extends 'layouts/event.njk' %}
 {% from 'partials/card-profile.njk' import card %}
@@ -29,14 +29,12 @@ description: Resilience of people, communities, and organisations in the Aotearo
   <p class="title-block-text__secondary">
     {{ description}}
   </p>
+
   <p>
-    The theme of this year’s conference is Resilience of people, communities, and organisations in the Aotearoa software industry. 
+    NZ Tech Rally wants to see the NZ software engineering community be inspired by how other local companies and engineers are thriving. We are keen to hear Kiwis share how they address different engineering concerns in the NZ context and feel empowered to try those solutions out at their organisations. 
   </p>
   <p>
-    Times have been tough. As an industry, we’ve experienced over-hiring, aggressive growth, burnout, redundancies, reduced budgets, recession, and closures. Many local software organisations have had to adapt to survive. 
-  </p>
-  <p>
-    Attendees will learn from these experiences and get practical advice from other Kiwis who have weathered the storm. Collectively, we need to prepare ourselves for the next cycle of disruption — and there’s no better way than to learn from our neighbours. 
+    Attendees will learn from these experiences and get practical advice from other Kiwis.
   </p>
   <p>
     Let's rally the NZ software industry together to become more resilient for 2025 and beyond.
@@ -62,7 +60,7 @@ description: Resilience of people, communities, and organisations in the Aotearo
         <h3>When?</h3>
         <p>
           <time datetime="2025-05-16T08:00:00+12:00">
-          Friday 16th May 2025<br>
+          Friday 16<sup>th</sup> May 2025<br>
           8:00am - 5:00pm
         </time>
         </p>
@@ -76,17 +74,17 @@ description: Resilience of people, communities, and organisations in the Aotearo
 
         <h3>How much?</h3>
         <ul>
-          <li>$170 early bird ticket (first 180 only)</li>
+          <li>$170 early bird ticket (first 150 only)</li>
           <li>$200 standard ticket</li>
-          <li>$220 last bird ticket (4th November onwards)</li>
+          <li>$220 last bird ticket (1st May onwards)</li>
         </ul>
         <p>
         Bulk ticket discount: $20 off per ticket when purchasing standard or last bird tickets for a group of four or more.
       </p>
-        {# <p>
+        <p>
         If your manager needs persuading, we've written a handy <a href="{{ '/convince-your-manager' | url }}">letter to help you convince them</a>!
-      </p> #}
-        <a class="button" href="{{ ticketUrl }}" rel="external">Buy a ticket now!</a>
+      </p>
+        <a class="button" href="https://events.humanitix.com/nztechrally2025/tickets?c=nztrsite" rel="external">Buy a ticket now!</a>
       </div>
     </div>
   </section>
@@ -94,85 +92,14 @@ description: Resilience of people, communities, and organisations in the Aotearo
   <section>
     <div class="section-label accent-border">
       <h2 class="section-title">
-        Speakers
+        Confirmed speakers
       </h2>
     </div>
 
     <ul class="cards profiles profiles--two-columns">
-      {% for speaker in collections.speakers2024 %}
+      {% for speaker in collections.speakers2025 %}
         {{ card(speaker, horizontal='true') }}
       {% endfor %}
     </ul>
-  </section>
-
-  <section>
-    <div class="section-label accent-border">
-      <h2 class="section-title">
-        Break-out activities
-      </h2>
-    </div>
-
-    <div class="columns columns-two-thirds">
-      <div class="text-indent column-one">
-        <p>
-          Instead of the usual break time which revolves around food, we're switching things up.
-        </p>
-        <p>
-          We're planning a variety of community and career building acitvities during these break-out sessions. Our breaks will revolve around these optional activities.
-        </p>
-        <p>
-          Though we're not taking away food! If you feel like eating, Tākina's in-house catering has surely charged us enough to feed everyone.
-        </p>
-
-        <div class="card">
-          <h3>Break-out discussions with speakers</h3>
-          <p>
-            We're not doing on-stage Q &amp; A with presenters. 
-          </p>
-          <p>
-            Instead, there will be break-out discussions after each block of speakers. This is where you will have an opportunity to speak directly to our presenters, dive deeper on their topic, and hang out with other attendees who are interested in the same topic. 
-          </p>
-          <p>
-            These break-out discussions are free-form. So you can stay with one presenter, or move between several presenters.
-          </p>
-        </div>
-
-        <div class="card">
-          <p>
-            More coming soon 
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="section-label accent-border">
-      <h2 class="section-title">
-        Workshop
-      </h2>
-    </div>
-
-    <div class="columns columns-two-thirds">
-      <div class="column-one card card-content card-content--horizontal">
-        <picture class="card-content__picture">
-          <source srcset="{{ '/assets/images/workshops/maia_miller.jpg' | url }}" media="(orientation: portrait)">
-          <img src="{{ '/assets/images/workshops/maia_miller.jpg' | url }}" alt="Maia has brown curly hair, green eyes and is smiling broadly at the camera.">
-        </picture>
-
-        <p class="card-content__info">
-          <a class="card-content__link" href="{{ '/workshop' | url }}">
-            <span class="card-title card-content__name">
-              Digital accessibility for the whole team
-            </span>
-
-            <span>
-              Maia Miller,
-              Managing Director @ Aleph accessibility
-            </span>
-          </a>
-        </p>
-      </div>
-    </div>
   </section>
 {% endblock %}

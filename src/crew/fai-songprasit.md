@@ -1,5 +1,5 @@
 ---
-crewAtEvent: ["NZ Tech Rally 2025, NZTestingConf 2024"]
+crewAtEvent: ["NZ Tech Rally 2025", "NZTestingConf 2024"]
 firstName: Fai
 lastName: Songprasit
 fullName: "{{ firstName }} {{ lastName }}"
@@ -12,7 +12,7 @@ profileUrl:
 profilePhoto: /assets/images/crew/fai_songprasit.jpg
 profilePhotoAltText: Fai smiling in the middle of a restaurant.
 profilePhotoType: image/jpg
-order: 5
+order: 3
 ---
 
 <p>Fai is a hospo professional turned techie.</p>

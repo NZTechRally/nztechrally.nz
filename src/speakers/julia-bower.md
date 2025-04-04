@@ -8,7 +8,7 @@ organisation: "The Fractional Directory & Serko"
 profileUrl:
   [{ "name": "LinkedIn", "url": "https://www.linkedin.com/in/julialbower" }]
 profilePhoto: /assets/images/speakers/Julia_Bower.jpg
-profilePhotoAltText: "Rowan’s portrait with Aotearoa’s Kā Tiritiri o te Moana (Southern Alps) in the background."
+profilePhotoAltText: "A white woman in her 30s with copper/brown hair and green/hazel eyes, relaxed and smiling at the camera."
 profilePhotoType: image/jpg
 ---
 

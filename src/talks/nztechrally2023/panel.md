@@ -1,7 +1,7 @@
 ---
 tags: panel
-speaker: Aaron Hodder
-speakerKey: aaron-hodder
+speaker: ["Aaron Hodder", " Rachel Collingridge"]
+speakerKey: [aaron-hodder, rachel-collingridge]
 talkTitle: "What great software engineering culture looks like, and how Kiwis have done it?"
 talkExcerpt: Panel discussion
 talkStartTime: 2023-07-07T13:00:00.000+12
