@@ -9,6 +9,7 @@ crewAtEvent:
   ]
 firstName: Camy
 lastName: Bhandari
+fullName: "{{ firstName }} {{ lastName }}"
 pronouns: She/Her
 role: Co-founder
 profileUrl:
