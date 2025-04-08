@@ -1,6 +1,7 @@
 ---
 firstName: James
 lastName: Espie
+fullName: "{{ firstName }} {{ lastName }}"
 pronouns: He/Him
 jobTitle: "Engineering Manager"
 organisation: "Fergus"

@@ -1,6 +1,7 @@
 ---
 firstName: Bron
 lastName: Thomson
+fullName: "{{ firstName }} {{ lastName }}"
 pronouns: She/Her
 jobTitle: "Founder & Co-CEO"
 organisation: "Springload"

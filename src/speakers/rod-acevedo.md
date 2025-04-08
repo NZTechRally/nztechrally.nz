@@ -1,6 +1,7 @@
 ---
 firstName: Rod
 lastName: Acevedo
+fullName: "{{ firstName }} {{ lastName }}"
 pronouns: He/Him/Ia
 jobTitle: "Design Lead"
 organisation: "RUSH Digital"

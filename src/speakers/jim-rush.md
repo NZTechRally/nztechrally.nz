@@ -1,6 +1,7 @@
 ---
 firstName: Jim
 lastName: Rush
+fullName: "{{ firstName }} {{ lastName }}"
 pronouns: He/Him
 jobTitle: "Senior Security Consultant"
 organisation: "PrivSec Consulting"

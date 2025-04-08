@@ -1,6 +1,7 @@
 ---
 firstName: Ben
 lastName: Yu
+fullName: "{{ firstName }} {{ lastName }}"
 pronouns: He/Him
 jobTitle: "Enterprise Architect"
 organisation: "Lotto New Zealand"

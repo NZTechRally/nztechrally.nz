@@ -1,6 +1,7 @@
 ---
 firstName: Edward
 lastName: Taylor
+fullName: "{{ firstName }} {{ lastName }}"
 pronouns: He/Him
 jobTitle: "Product Person "
 organisation: "Kiwibank"

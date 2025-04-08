@@ -1,6 +1,7 @@
 ---
 firstName: Sachi
 lastName: Taulelei
+fullName: "{{ firstName }} {{ lastName }}"
 pronouns: She/Her
 jobTitle: "Founder"
 organisation: "Humble"
