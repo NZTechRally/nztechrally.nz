@@ -35,7 +35,7 @@
   --colour-button-background-hover: var(--colour-pink);
 
   --subtle-shadow: 1px solid #1c2230;
-  --drop-shadow: 0px 0px 16px rgba(0, 0, 0, 0.15);
+  --drop-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
 }
 
 body {

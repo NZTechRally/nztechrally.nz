@@ -58,7 +58,7 @@
   --colour-button-background--secondary: var(--colour-white);
 
   --subtle-shadow: 1px solid #1c2230;
-  --drop-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  --drop-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
   --accent-border-width: 8px;
 }
 
@@ -343,7 +343,7 @@ a.button:hover {
 }
 
 :focus-visible {
-  box-shadow: 0 0 0 0px transparent, 0 0 0 3px var(--colour-bright-orange);
+  box-shadow: 0 0 0 0 transparent, 0 0 0 3px var(--colour-bright-orange);
   outline: 1px solid transparent;
   transition: box-shadow 0.1s;
 }
@@ -551,7 +551,7 @@ section,
 }
 
 .content-wrapper.section-colour {
-  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.05);
 }
 
 .section:first-child {
