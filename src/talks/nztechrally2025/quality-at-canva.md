@@ -209,6 +209,7 @@ Final phase: Once we were confident we had removed blockers and built the necess
 
 We said:"On this date, the manual testing phase will be removed. If you haven’t automated your tests or found a solution, your features will go untested — and that’s a risk you own."
 No flexibility on that date. But full support to help teams succeed before then.
+
 In a few cases, we escalated to leadership — and leadership cared, because they were accountable.
 That final “stick” approach wouldn’t have worked at the beginning. It would’ve been counterproductive. We had to build trust, provide solutions, and then set the fixed timeline.
 
@@ -223,7 +224,7 @@ I shared monthly progress updates. I tied the program into roadmaps and delivery
 There were curveballs. We faced surprises — things we hadn’t considered: org changes, feature ownership shifts, unexpected technical or cost challenges.
 
 But I always came back to this question:
-Can we remove the manual testing phase on time?If not — what needs to change to make it possible?
+Can we remove the manual testing phase on time? If not — what needs to change to make it possible?
 That clarity helped me make fast decisions, offer realistic projections, and get high-level support when needed.
 
 So — what does success look like?
@@ -245,12 +246,12 @@ We’ve faced a few curveballs recently. Probably more ahead. But now we have a 
 And once again, the feedback has been overwhelmingly positive. Teams love that we’re driving change through data, empowering them to improve code and tests they own.
 
 So, to wrap up — here are the key takeaways from this project:
-1. Capture the whyConvince people this is a worthwhile goal.You can’t drive change unless the organisation wants to change.
-2. Make it visibleUse dashboards and metrics. Drive action. Give stakeholders clear progress signals.
-3. Offer supportYou can’t do it all yourself. Listen. Solve real problems. Don’t just tell teams what to do.
-4. Make ownership explicitDon’t centralise the work. Break it down. Help every team take responsibility.
-5. Communicate and drive momentumKeep it high level, but dig deep when needed.Reinforce the message. Respect teams’ realities — but keep driving forward.
+1. Capture the why. Convince people this is a worthwhile goal. You can’t drive change unless the organisation wants to change.
+2. Make it visible. Use dashboards and metrics. Drive action. Give stakeholders clear progress signals.
+3. Offer support. You can’t do it all yourself. Listen. Solve real problems. Don’t just tell teams what to do.
+4. Make ownership explicit. Don’t centralise the work. Break it down. Help every team take responsibility.
+5. Communicate and drive momentum. Keep it high level, but dig deep when needed. Reinforce the message. Respect teams’ realities — but keep driving forward.
 
-That’s it from me — thank you so much for listening.
-And come and chat with me today — I’d love to hear if you’ve faced similar challenges.
+I'll finish there — thank you so much for listening. 
+And come and talk to me rest of today — I’d love to hear if you’ve faced similar challenges.
 
