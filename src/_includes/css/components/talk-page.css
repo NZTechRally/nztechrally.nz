@@ -18,8 +18,15 @@
   margin-top: var(--spacing-main);
 }
 
+@media only screen and (max-width: 519px) {
+  .talk-page__transcript-wrapper h2 {
+    margin-top: 0;
+  }
+}
+
 @media only screen and (min-width: 520px) {
-  .talk-page__transcript {
-    padding-left: 1.5rem;
+  .talk-page__transcript-wrapper .card {
+    padding-left: calc(var(--accent-border-width) + var(--spacing-large));
+    padding-right: calc(var(--accent-border-width) + var(--spacing-large));
   }
 }
