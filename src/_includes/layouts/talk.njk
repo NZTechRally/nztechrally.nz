@@ -63,6 +63,21 @@
         <h2>Transcript</h2>
         {{ content | safe }}
       </div>
+
+      {%- if talkReferences -%}
+        <div class="column-two">
+          <div class="card">
+            <h2>References</h2>
+            <ul>
+              {%- for reference in talkReferences -%}
+                <li>
+                  <a href="{{ reference.url }}" rel="external">{{ reference.name }}</a>
+                </li>
+              {%- endfor -%}
+            </ul>
+          </div>
+        </div>
+      {%- endif -%}
     </div>
   {%- endif -%}
 {% endblock %}

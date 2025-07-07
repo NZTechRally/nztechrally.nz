@@ -13,6 +13,7 @@ featuredImageType: image/jpg
 featuredImageWidth: 1280
 featuredImageHeight: 720
 talkRecordingID: pL2sxRCpqdI
+talkReferences:
 ---
 
 Kia ora tātou!
@@ -37,7 +38,7 @@ We know how to plan for it. There are books, experts, rules of thumb. Create you
 That was our story too. At Springload, we grew steadily for 17 years. We looked after our clients and our team, and we did good work.
 
 Then came March 2020. You all know what happened. We went home — and stayed there. The world changed, almost overnight.
-It was the kind of change no one was really prepared for. At our peak, we had about 90 staff. 
+It was the kind of change no one was really prepared for. At our peak, we had about 90 staff.
 
 And every year since 2020, I’ve felt the level of external volatility grow like never before.
 
@@ -124,19 +125,19 @@ Second: we can’t predict what will happen — but we can prepare for how we re
 So I want to share a few core principles. Let’s call it **Bron’s Frameworks for Uncertainty**.
 
 1. Humans still want humans.
-After COVID, research showed just how much people value human-to-human interaction. That’s being tested now — with more chatbots, machines, and AI in our lives.
+   After COVID, research showed just how much people value human-to-human interaction. That’s being tested now — with more chatbots, machines, and AI in our lives.
 
 But people still want to feel heard. Understood. Treated like individuals. AI isn’t great at that — not yet.
 
 2. Strategic responsiveness beats strategic planning.
-The five- or ten-year strategic plan? Dead. Instead, we need to stay ready for anything.
+   The five- or ten-year strategic plan? Dead. Instead, we need to stay ready for anything.
 
 This means short-term scenario planning — think quarterly, not annually. Regular reassessment. Constant scanning for new threats and opportunities.
 
 Embed a culture of experimentation and innovation. Don’t try to predict what will happen in three years — build systems that are agile enough to respond next week.
 
 3. Strengthen everyone’s “change muscle”.
-Sorry to all the change managers out there — but I don’t think “change management” should be a separate thing.
+   Sorry to all the change managers out there — but I don’t think “change management” should be a separate thing.
 
 That implies there’s a normal state, and then “change” happens. But change is the normal state now.
 
@@ -147,14 +148,14 @@ That means setting expectations that everyone is constantly exploring new tools,
 Celebrate experimentation. Celebrate failure. If people don’t feel safe to fail, they won’t feel safe to innovate.
 
 4. Keep up with new tools — especially AI.
-It’s like drinking from a firehose. You can’t try everything — but you can stay curious.
+   It’s like drinking from a firehose. You can’t try everything — but you can stay curious.
 
 Skim the newsletters. Let your team try new tools. Don’t be afraid to ditch what doesn’t work and move on quickly.
 
 Make sharing and learning a habit across the team. It’s not a real learning culture if one person knows something and the rest don’t.
 
 5. Diversify.
-Diversify your client base. Your revenue streams. Your services. Your team's skills.
+   Diversify your client base. Your revenue streams. Your services. Your team's skills.
 
 This is a return to generalists. Twenty-five years ago, we were web designers who did everything — research, code, content, design.
 
@@ -203,11 +204,11 @@ This is our new world.
 
 So I think we need to fundamentally reframe what success in business looks like.
 
- - From growth metrics to adaptation metrics.
+- From growth metrics to adaptation metrics.
 
- - From stability to anti-fragility.
+- From stability to anti-fragility.
 
-- From best practices to next practic  es.
+- From best practices to next practic es.
 
 - From fixed identities to fluid capabilities.
 

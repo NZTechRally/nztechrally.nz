@@ -16,4 +16,5 @@ featuredImageType: image/jpg
 featuredImageWidth: 1280
 featuredImageHeight: 720
 talkRecordingID:
+talkReferences:
 ---

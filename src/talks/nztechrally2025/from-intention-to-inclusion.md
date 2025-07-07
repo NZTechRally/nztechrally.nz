@@ -14,5 +14,6 @@ featuredImageAlt: "Sachi's picture with text: NZ Tech Rally. From intention to i
 featuredImageType: image/jpg
 featuredImageWidth: 1280
 featuredImageHeight: 720
-talkRecordingID:        
+talkRecordingID:  
+talkReferences:  
 ---

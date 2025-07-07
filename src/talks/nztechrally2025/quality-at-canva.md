@@ -14,8 +14,8 @@ featuredImageType: image/jpg
 featuredImageWidth: 1280
 featuredImageHeight: 720
 talkRecordingID: eAchRbuYVk4
+talkReferences:
 ---
-
 
 So, good morning everyone. Thanks for coming. I'm Mark, as Marcus said, and I'm here to talk to you all about driving a transformation at scale.
 
@@ -79,10 +79,11 @@ So, the vision is not just “remove manual regression tests” — that’s alm
 To do that, we needed to identify, classify, and remove the reasons why the manual tests existed — not just the past reasons why they were written, but also the reasons why we were still writing them. The reasons why we would write them in the future.
 
 From a technical point of view, we needed to:
-* Build new automation frameworks to support the various scenarios,
-* Remove the old scripted tests without dropping coverage, and
-* Address the prioritisation and planning that goes into how teams build their work — how they approach their features and how they build their tests.
-  
+
+- Build new automation frameworks to support the various scenarios,
+- Remove the old scripted tests without dropping coverage, and
+- Address the prioritisation and planning that goes into how teams build their work — how they approach their features and how they build their tests.
+
 So the real challenge we were solving was: changing the culture of testing and quality across all of the dev teams — again, more than 2,000 engineers.
 So that was the vision — pretty clear at this point.
 Now, this is the structured approach of how we drove that change across the organisation. Talking about buy-in, visibility, execution, culture — and how it evolved over time.
@@ -94,10 +95,11 @@ We weren’t going to solve this by having a small team of superstars writing au
 Teams that have the context of the features they’re building — they have the deep understanding of what their users expect — those are the teams that should be writing and owning the automated and manual tests.
 
 So the high-level approach we followed was:
-* Get buy-in for this vision — for what we were trying to do,
-* Break the problem down into manageable pieces, and
-* Really work on the ownership of those pieces.
-We made that ownership explicit. We made it visible. We made it clear. And we gave the data to the decision-makers — made the journey ahead, and the progress we were making, visible.
+
+- Get buy-in for this vision — for what we were trying to do,
+- Break the problem down into manageable pieces, and
+- Really work on the ownership of those pieces.
+  We made that ownership explicit. We made it visible. We made it clear. And we gave the data to the decision-makers — made the journey ahead, and the progress we were making, visible.
 
 My job was then to communicate around that — get the buy-in, build momentum, drive the momentum, and deliver the results by clearly defining expectations.
 
@@ -137,11 +139,12 @@ So giving them the data, the dashboards, putting it in front of people — that 
 As time passed, my job became more about tracking progress, celebrating wins, and sharing with stakeholders how we were doing.
 
 We spent a lot of time syncing every week — looking at the data, identifying blockers, and sending out comms to the business. Repeating and emphasising the message:
-* Why we’re doing this,
-* Why it matters,
-* What needs to happen, and
-* What the expectations are — all backed up with charts and visuals.
-  
+
+- Why we’re doing this,
+- Why it matters,
+- What needs to happen, and
+- What the expectations are — all backed up with charts and visuals.
+
 We used company meetings. We used Slack channels — especially when delivering something new and exciting like a framework that allowed us to test something previously complicated.
 
 We also used personal networks — regular catchups with people who had responsibilities. We sought their support, flagged concerns, and kept visibility high.
@@ -182,10 +185,11 @@ Often, the issue wasn’t that the test was “impossible” to automate. The pr
 That’s fine for manual testing — you can do that. But automated testing? You want to avoid brittle end-to-end flows.
 
 You want to:
-* Test in isolation,
-* Use mocks and monitoring, and
-* Recognise that CI is not the right place to test full integrations.
-  
+
+- Test in isolation,
+- Use mocks and monitoring, and
+- Recognise that CI is not the right place to test full integrations.
+
 Test components. Test boundaries. And then trust the system-level coverage as a sum of well-tested parts.
 We documented this guidance. We taught teams how to break down complex flows. We invested in getting them to adopt these practices.
 
@@ -214,12 +218,13 @@ In a few cases, we escalated to leadership — and leadership cared, because the
 That final “stick” approach wouldn’t have worked at the beginning. It would’ve been counterproductive. We had to build trust, provide solutions, and then set the fixed timeline.
 
 My role as the leader of this change was mostly about:
-* Keeping momentum,
-* Reinforcing the message,
-* Celebrating wins,
-* Flagging blockers, and
-* Staying respectful of other business priorities — while being persistent about this goal.
-  
+
+- Keeping momentum,
+- Reinforcing the message,
+- Celebrating wins,
+- Flagging blockers, and
+- Staying respectful of other business priorities — while being persistent about this goal.
+
 I shared monthly progress updates. I tied the program into roadmaps and delivery plans. I kept key leaders in the loop — both when things were going well, and when they weren’t.
 There were curveballs. We faced surprises — things we hadn’t considered: org changes, feature ownership shifts, unexpected technical or cost challenges.
 
@@ -246,6 +251,7 @@ We’ve faced a few curveballs recently. Probably more ahead. But now we have a 
 And once again, the feedback has been overwhelmingly positive. Teams love that we’re driving change through data, empowering them to improve code and tests they own.
 
 So, to wrap up — here are the key takeaways from this project:
+
 1. Capture the why. Convince people this is a worthwhile goal. You can’t drive change unless the organisation wants to change.
 2. Make it visible. Use dashboards and metrics. Drive action. Give stakeholders clear progress signals.
 3. Offer support. You can’t do it all yourself. Listen. Solve real problems. Don’t just tell teams what to do.
@@ -254,4 +260,3 @@ So, to wrap up — here are the key takeaways from this project:
 
 I'll finish there — thank you so much for listening. 
 And come and talk to me rest of today — I’d love to hear if you’ve faced similar challenges.
-
