@@ -25,5 +25,8 @@ https://2023.nztechrally.nz/speakers/* /2023/speakers/:splat 200!
 # Serve panellists pages for 2023 subdomain (200 rewrite)
 https://2023.nztechrally.nz/panellists/* /2023/panellists/:splat 200!
 
+# Handle 2023 paths on subdomain - redirect to root (301 redirect)
+https://2023.nztechrally.nz/2023/* https://2023.nztechrally.nz/:splat 301!
+
 # Serve /2023/ content for 2023.nztechrally.nz subdomain (200 rewrite)
 https://2023.nztechrally.nz/* /2023/:splat 200!

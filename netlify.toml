@@ -46,6 +46,13 @@
   status = 200
   force = true
 
+# Handle 2023 paths on subdomain - redirect to root
+[[redirects]]
+  from = "https://2023.nztechrally.nz/2023/*"
+  to = "https://2023.nztechrally.nz/:splat"
+  status = 301
+  force = true
+
 # Serve /2023/ content for 2023.nztechrally.nz subdomain
 [[redirects]]
   from = "https://2023.nztechrally.nz/*"
