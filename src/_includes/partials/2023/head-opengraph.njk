@@ -1,10 +1,10 @@
 <meta property="og:title" content="{{ title + ' – ' + site.title if title else site.title }}">
 <meta property="og:description" content="{{ description if description else site.description }}">
-<meta property="og:url" content="{{ page.url | absoluteUrl(site.url) }}">
+<meta property="og:url" content="{{ page.url | url }}">
 <meta property="og:author" content="{{ fullName if contentType === 'speaker' else site.title }}">
 <meta property="og:site_name" content="{{ site.title }}">
 <meta property="og:type" content="{{ ogType if ogType else 'website' }}">
-<meta property="og:image" content="{{ featuredImage | absoluteUrl(site.url) if featuredImage else site.image }}">
+<meta property="og:image" content="{{ featuredImage | url if featuredImage else site.image }}">
 <meta property="og:image:alt" content="{{ featuredImageAlt if featuredImageAlt else site.imageAlt }}">
 <meta property="og:image:type" content="{{ featuredImageType if featuredImageType else site.imageType }}">
 <meta property="og:image:width" content="{{ featuredImageWidth if featuredImageWidth else site.imageWidth }}">

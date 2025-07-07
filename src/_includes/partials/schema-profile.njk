@@ -2,7 +2,7 @@
   {
     "@context": "https://schema.org",
     "@type": "Person",
-    "url": "{{ page.url | absoluteUrl(site.url) }}",
+    "url": "{{ page.url | url }}",
     "name": "{{ firstName }} {{ lastName }}",
     "description": "{{ content }}",
     "affiliation": "NZ Tech Rally",
@@ -10,7 +10,7 @@
     "hasOccupation": "{{ jobTitle }}",
     "image": {
       "@type": "ImageObject",
-      "url": "{{ profilePhoto | absoluteUrl(site.url) if featuredImage else site.image }}",
+      "url": "{{ profilePhoto | url if featuredImage else site.image }}",
       "description": "{{ profilePhotoAltText }}",
       "width": "1024px",
       "height": "1024px"

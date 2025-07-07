@@ -2,14 +2,14 @@
   {
     "@context": "https://schema.org",
     "@type": "Event",
-    "url": "{{ page.url | absoluteUrl(site.url) }}",
+    "url": "{{ page.url | url }}",
     "name": "{{ talkTitle }} by {{ speaker }}",
     "description": "{{ talkExcerpt }}",
     "startDate": "{{ talkStartTime }}",
     "endDate": "{{ talkEndTime }}",
     "image": {
       "@type": "ImageObject",
-      "url": "{{ featuredImage | absoluteUrl(site.url) if featuredImage else site.image }}",
+      "url": "{{ featuredImage | url if featuredImage else site.image }}",
       "description": "{{ featuredImageAlt if featuredImageAlt else site.imageAlt }}",
       "width": "{{ featuredImageWidth if featuredImageWidth else site.imageWidth }}",
       "height": "{{ featuredImageHeight if featuredImageHeight else site.imageHeight }}"

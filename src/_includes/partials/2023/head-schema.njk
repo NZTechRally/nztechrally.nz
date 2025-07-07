@@ -1,4 +1,4 @@
 <meta itemprop="name" content="{{ title + ' – ' + site.title if title else site.title }}">
-<meta itemprop="image" content="{{ featuredImage | absoluteUrl(site.url) if featuredImage else site.logo }}">
-<meta itemprop="url" content="{{ page.url | absoluteUrl(site.url) }}">
+<meta itemprop="image" content="{{ featuredImage | url if featuredImage else site.logo }}">
+<meta itemprop="url" content="{{ page.url | url }}">
 <meta itemprop="author" content="{{ fullName if contentType === 'speaker' else site.title }}">
