@@ -10,9 +10,27 @@
 [context.deploy-preview]
   command = "npm run build"
 
-# Domain aliases
+# Force HTTPS for all domains
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+
+# Domain aliases and HTTPS redirects
+[[redirects]]
+  from = "http://nztechrally.nz/2023/*"
+  to = "https://2023.nztechrally.nz/:splat"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "https://nztechrally.nz/2023/*"
+  to = "https://2023.nztechrally.nz/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://2023.nztechrally.nz/*"
   to = "https://2023.nztechrally.nz/:splat"
   status = 301
   force = true
