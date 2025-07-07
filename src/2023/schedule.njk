@@ -1,0 +1,100 @@
+---
+tags: page
+title: Schedule
+pageIcon: clock
+description: Schedule for NZ Tech Rally Conference on 7th July 2023
+event: NZTechRally2023
+---
+{% extends 'layouts/2023/base.njk' %}
+
+{% block pageHeader %}
+  <h1 class="section-title">
+    {{ title }}
+    {% svg pageIcon %}
+  </h1>
+{% endblock %}
+
+{% block content %}
+  <div class="columns columns-half">
+    <picture class="column-two section-label hero hero--schedule">
+      <img src="{{ '/assets/images/decorations/2023/hero-home.jpg' | url }}" alt="alt">
+    </picture>
+
+    <ul class="column-one">
+      <li class="card">
+        08:00 - 09:00 <br>Registration
+      </li>
+      <li class="card">
+        09:00 - 09:10 <br>
+        Opening remarks <br>
+        <a href="{{ '/team/prae-songprasit' | url }}">Prae Songprasit - Co-Founder @ NZ Tech Rally</a>
+      </li>
+      <li class="card">
+        09:10 - 10:00 <br>
+        <strong>Keynote</strong> - Kiwiana &amp; Code: What is unique about engineering culture in Aotearoa New Zealand?<br>
+        <a href="{{ '/speakers/katrina-clokie' | url }}">Katrina Clokie - CTO @ Fergus</a>
+      </li>
+      <li class="card">
+        10:00 - 10:30 <br>
+        One DevOps does not git all<br>
+        <a href="{{ '/speakers/allen-geer' | url }}">Allen Geer - Cloud Platforms &amp; Engineering Practice Lead @ Provoke</a>
+      </li>
+      <li class="card">
+        10:30 - 11:00 <br>Morning tea
+      </li>
+      <li class="card">
+        11:00 - 11:30 <br>
+        Communities in code <br>
+        <a href="{{ '/speakers/aleisha-amohia' | url }}">Aleisha Amohia - Koha Technical Lead @ Catalyst IT</a>
+      </li>
+      <li class="card">
+        11:30 - 12:00 <br>
+        The fine line between chaos and order<br>
+        <a href="{{ '/speakers/jade-thomas' | url }}">Jade Thomas - Engineering Manager Online Channels @ BNZ</a>
+      </li>
+      <li class="card">
+        12:00 - 13:00 <br>Lunch
+      </li>
+      <li class="card">
+        13:00 - 14:00 <br>
+        Panel discuss: What does great software engineering culture look like, and how have Kiwis done it? <br>
+        <a href="{{ '/team/aaron-hodder' | url }}">Aaron Hodder - Co-Founder @ NZ Tech Rally</a>
+      </li>
+      <li class="card">
+        14:00 - 14:30 <br>
+        Fostering a quality quality culture <br>
+        <a href="{{ '/speakers/adam-howard' | url }}">Adam Howard - Engineering Manager</a>
+      </li>
+      <li class="card">
+        14:30 - 15:00 <br>
+        Including security in your engineering culture<br>
+        <a href="{{ '/speakers/erica-anderson' | url }}">Erica Anderson - COO and Co-Founder @ SafeStack</a>
+      </li>
+      <li class="card">
+        15:00 - 15:30 <br>
+        Afternoon tea
+      </li>
+      <li class="card">
+        15:30 - 16:00 <br>
+        Engineering metrics, minus the creepiness<br>
+        <a href="{{ '/speakers/jenny-sahng' | url }}">Jenny Sahng - Data & Founding team @ Multitudes</a>
+      </li>
+      <li class="card">
+        16:00 - 16:30 <br>
+        Nerd to being heard: Leadership without losing your inner geek<br>
+        <a href="{{ '/speakers/mrinal-mukherjee' | url }}">Mrinal Mukherjee - Engineering Manager @ BNZ</a>
+      </li>
+      <li class="card">
+        16:30 - 16:50 <br>Quiz
+      </li>
+      <li class="card">
+        16:50 - 17:00 <br>
+        Closing remarks <br>
+        <a href="{{ '/team/camy-bhandari' | url }}">Camy Bhandari - Co-Founder @ NZ Tech Rally</a>
+      </li>
+      <li class="card">
+        17:00 onwards <br>After socials
+      </li>
+    </ul>
+  </div>
+{% endblock %}

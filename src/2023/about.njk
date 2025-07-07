@@ -1,0 +1,152 @@
+---
+tags: page
+title: About
+pageIcon: info
+description: NZ Tech Rally's vision, mission, values, and team members.
+event: NZTechRally2023
+---
+{% set contentType = 'about' %}
+
+{% extends 'layouts/2023/base.njk' %}
+{% from 'partials/2023/card-profile.njk' import card %}
+
+{%- css %}
+  {% include "css/2023/components/profile-card.css" %}
+{%- endcss %}
+
+{% block pageHeader %}
+  <h1 class="section-title">
+    {{ title }} NZ Tech Rally {% svg pageIcon %}
+  </h1>
+{% endblock %}
+
+{% block content %}
+  <main id="mainContent">
+    <section>
+      <div class="section-label accent-border">
+        <h2 class="section-title">Vision</h2>
+      </div>
+      
+      <div class="card accent-border">
+        <p>We want NZ software sector to be the most vibrant and diverse in the world.</p>
+      </div>
+    </section>
+    
+    <section>
+      <div class="section-label accent-border">
+        <h2 class="section-title">Mission</h2>
+      </div>
+
+      <div class="card accent-border">
+        <p>We provide inclusive spaces for the NZ software community to celebrate, connect and grow together.</p>
+        <p>NZ Tech Rally will do this by:</p> 
+        <ul>
+          <li>Showcasing NZ ingenuity in software</li>
+          <li>Providing opportunities to grow our community’s network and impact</li>
+          <li>Creating safe, inclusive, accessible and diverse educational content</li>
+          <li>Sharing Kiwi adaptation of good software practices and emerging technologies</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-label accent-border">
+        <h2 class="section-title" id="ourWhy">Why NZ Tech Rally exists</h2>
+      </div>
+
+      <div class="card accent-border">
+        <p>
+          NZ has many events that cater for anyone working in tech, such as Webstock, Tech Week, Code Camp, etc. These events talk about general tech-related topics, ranging from product management to design to code. 
+        </p>
+        <p>
+          NZ also has many events that focus on specific engineering practices or tools: like security, cloud, full-stack, mobile development, JavaScript, robotics, etc.
+        </p>
+        <p>
+          But there isn’t anything that focuses on broad software engineering concerns.
+        </p>
+        <p> 
+          We also noticed that many topics are case studies from overseas and often feature international speakers. 
+        </p>
+        <p>
+          While it is great to look for inspiration outside of the NZ tech bubble, we often forget that there are also great relatable examples in NZ.
+        </p>
+        <p>
+          We want to create a place where all engineering roles like QA, front-end, security, and data can get together and share how they address common software engineering problems in NZ.
+        </p>
+        <p>
+          By learning from each other, we can support, strengthen, uplift, and grow software engineering practices in NZ together; something which can’t be done as effectively in practice-based silos.
+        </p>
+      </div>
+    </section>
+      
+    <section>
+      <div class="section-label accent-border">
+        <h2 class="section-title">Values</h2>
+      </div>
+
+      <ul class="cards">
+        <li class="card accent-border">
+          <h3>Community focused</h3>
+          <p>We’re here for the NZ software community.</p>
+          <p>We believe in Kiwi ingenuity, and how supportive we can be for one another. So we’ll focus on rallying and strength our community to create a vibrant software sector!</p>
+        </li>
+        <li class="card accent-border">
+          <h3>Inclusive</h3>
+          <p>
+            We want to see more diverse representation of software engineers in New Zealand.
+          </p>
+          <p>
+            We do this through curation of voices from different abilities, career progression, life stages, sexual orientation, and ethnic groups.
+          </p>
+          <p>
+            We long for welcoming and safe spaces for the community to gather, in an accessible and affordable way.
+          </p>
+        </li>
+        <li class="card accent-border">
+          <h3>Operate with integrity</h3>
+          <p>
+            We believe in saying what’s on our minds and sticking to our principles while serving our community.
+          </p>
+        </li>
+        <li class="card accent-border">
+          <h3>Pragmatic</h3>
+          <p>
+            Ideals and theories are great. But it can only be as good the execution.
+          </p>
+          <p>
+            We are all about applicable solutions and relevant content that are well adapted for our NZ software community.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="section-label accent-border">
+        <h2 class="section-title">Meet our team</h2>
+      </div>
+
+      <ul class="cards profiles">
+        {% for team in collections.team %}
+          {{ card(team, horizontal='true') }}
+        {% endfor %}
+
+        <li class="card accent-border profile-card profile-card--horizontal">
+          <span class="profile-card__picture">
+            {% svg 'person_outline' %}
+            <span class="profile-card__picture-text">This could be you!</span>
+          </span>
+
+          <p class="profile-card__info">
+            <a class="profile-card__link" href="{{ '/volunteer' | url }}" rel="external">
+              <span class="card-title profile-card__name">
+                Become a volunteer
+              </span>
+
+              <span>Help us grow NZ software engineer community</span>
+            </a>
+          </p>
+        </li>
+      </ul>
+    </section>
+  </main>
+{% endblock %}
