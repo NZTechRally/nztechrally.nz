@@ -4,7 +4,6 @@ title: NZ Tech Rally 2025 - 16th May
 description: Inclusive spaces for the NZ software community to celebrate, connect and grow together.
 ---
 {% extends 'layouts/event.njk' %}
-{% from 'partials/card-profile.njk' import card %}
 
 {% set contentType = 'home' %}
 
@@ -94,9 +93,44 @@ description: Inclusive spaces for the NZ software community to celebrate, connec
       </h2>
     </div>
 
+    {# <ul class="cards profiles profiles--two-columns">
+      {% for speaker in collections.speakers2025 %}
+        {{ card(speaker) }}
+      {% endfor %}
+    </ul> #}
+
     <ul class="cards profiles profiles--two-columns">
       {% for speaker in collections.speakers2025 %}
-        {{ card(speaker, horizontal='true') }}
+        <li class="card card-profile card-profile--horizontal">
+          <picture class="card-profile__picture">
+            <source srcset="{{ speaker.data.profilePhoto }}" media="(orientation: portrait)">
+            <img src="{{ speaker.data.profilePhoto }}" alt="{{ speaker.data.profilePhotoAltText }}">
+          </picture>
+
+          <p class="card-profile__info">
+            <a class="card-profile__link" href="{{ speaker.url | url }}">
+              {% for talk in collections.talks | getTalksBySpeaker(speaker.fileSlug) %}
+                {% if talk.data.event == "NZ Tech Rally 2025" %}
+                  <strong class="card-title card-title--talk-name">{{ talk.data.talkTitle }}</strong>
+                {% endif %}
+              {% endfor %}
+
+              <span>
+                {{ speaker.data.firstName }}
+                {{ speaker.data.lastName }}
+                <br>
+                {{ speaker.data.jobTitle }}
+                {% if speaker.data.organisation %}
+                  @ {{ speaker.data.organisation }}
+                {% endif %}
+              </span>
+
+              {% if speaker.data.role %}
+                <strong>{{ speaker.data.role }}</strong>
+              {% endif %}
+            </a>
+          </p>
+        </li>
       {% endfor %}
     </ul>
   </section>
