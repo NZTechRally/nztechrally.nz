@@ -50,8 +50,11 @@
   font-size: var(--font-size-main);
 }
 
-.card-title--talk-name {
+.card-title {
   font-weight: var(--font-weight-semi-bold);
+}
+
+.card-title--talk-name {
   font-size: 18px; /* Special one-off */
   line-height: 1.2;
   margin-bottom: var(--spacing-small);
@@ -93,32 +96,21 @@
   height: 100%;
 }
 
-.card .card-profile__link:focus-visible {
-  box-shadow: none;
-  outline: 0;
-}
-
-.card .card-profile__link:focus-visible::before {
-  box-shadow: 0 0 0 2px var(--colour-grey), 0 0 0 5px var(--colour-orange);
-  outline: 1px solid transparent;
-  transition: box-shadow 0.1s;
-}
-
 .card .card-profile__link,
 .card .card-profile__link * {
   color: currentColor;
   text-decoration: none;
 }
 
-.card .card-profile__link:visited .card-title--talk-name {
+.card .card-profile__link:visited {
   color: var(--colour-link-visited);
 }
 
-.card .card-profile__link .card-title--talk-name {
+.card .card-profile__link {
   color: var(--colour-link);
 }
 
-.card .card-profile__link:hover .card-title--talk-name {
+.card .card-profile__link:hover {
   text-decoration: underline;
 }
 

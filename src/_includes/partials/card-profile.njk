@@ -6,21 +6,21 @@
     </picture>
 
     <p class="card-profile__info">
-      <a class="card-profile__link" href="{{ content.url | url }}">
-        <span>
-          <strong class="card-title">
-            {{ content.data.firstName }}
-            {{ content.data.lastName }}</strong>
-          {{ content.data.jobTitle }}
-          {% if content.data.organisation %}
-            @ {{ content.data.organisation }}
-          {% endif %}
-        </span>
-
-        {% if content.data.role %}
-          {{ content.data.role }}
-        {% endif %}
+      <a class="card-profile__link card-title" href="{{ content.url | url }}">
+        {{ content.data.firstName }}
+        {{ content.data.lastName }}
       </a>
+
+      <span>
+        {{ content.data.jobTitle }}
+        {% if content.data.organisation %}
+            @ {{ content.data.organisation }}
+        {% endif %}
+      </span>
+
+      {% if content.data.role %}
+        {{ content.data.role }}
+      {% endif %}
     </p>
   </li>
 {% endmacro %}
