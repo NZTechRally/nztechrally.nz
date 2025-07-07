@@ -2,6 +2,7 @@
 tags: page
 title: About
 description: NZ Tech Rally's vision, mission, values, and crew.
+event: NZTechRally2025
 eleventyNavigation:
   key: About
   order: 3
@@ -148,23 +149,6 @@ featuredImageHeight:
         {% for crewMember in collections.crew | getCurrentCrew('NZ Tech Rally 2025') %}
           {{ card(crewMember, horizontal='true') }}
         {% endfor %}
-
-        {# <li class="card card-profile card-profile--horizontal">
-          <span class="card-profile__picture">
-            {% svg 'person_outline' %}
-            <span class="card-profile__picture-text">This could be you!</span>
-          </span>
-
-          <p class="card-profile__info">
-            <a class="card-profile__link" href="{{ '/volunteer' | url }}" rel="external">
-              <span class="card-title card-title--talk-name">
-                Become a volunteer
-              </span>
-
-              <span>Help us grow NZ software engineer community</span>
-            </a>
-          </p>
-        </li> #}
       </ul>
     </section>
 
