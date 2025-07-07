@@ -37,6 +37,9 @@
   {% include 'css/normalize.css' %}
   {% include 'css/font-face.css' %}
   {% include 'css/2023/base.css' %}
+
+  {% include "css/components/global-nav.css" %}
+  {% include "css/components/hamburger.css" %}
   {% endcss %}
 
   {#- Render the CSS bundle #}
@@ -72,7 +75,62 @@
         </h1>
       {% endif %}
 
-      {%- include 'partials/navigation-main.njk' -%}
+      <nav id="globalNavigation">
+        <button 
+          class="hamburger hamburger--slider"
+          aria-controls="globalNavigation"
+          aria-expanded="false"
+          id="globalNavigationButton"
+        >
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+
+          <span class="visually-hidden">Site navigation</span>
+        </button>
+
+        <ul
+          class="global-navigation"
+          hidden
+        >
+          <li class="global-navigation__item">
+            <a 
+            class="global-navigation__link"
+            href="{{ '/2023/' | url }}"
+            >
+              Home
+            </a>
+          </li>
+
+          <li class="global-navigation__item">
+            <a 
+              class="global-navigation__link"
+              href="https://photos.app.goo.gl/jz8HWFMt6uQbE1Mx6"
+              rel="external"
+            >
+              Photos
+            </a>
+          </li>
+
+          <li class="global-navigation__item">
+            <a 
+              class="global-navigation__link"
+              href="{{ '/2023/schedule' | url }}"
+            >
+              Schedule
+            </a>
+          </li>
+
+          <li class="global-navigation__item">
+            <a 
+              class="global-navigation__link"
+              href="{{ '/2023/about' | url }}"
+            >
+              About
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header>
 
@@ -83,7 +141,58 @@
     {% block pageIntro %}{% endblock %}
     {% block content %}{% endblock %}
 
-    {% include 'partials/sponsors.njk' %}
+    {%- css %}
+    {% include "css/2023/components/sponsors.css" %}
+    {% endcss %}
+
+    <section>
+      <div class="section-label section-label--header accent-border">
+        <h2 class="section-title">
+        Sponsors {% svg "sparkles" %}
+        </h2>
+      </div>
+
+      <div class="text-indent">
+        <h3>Gold sponsor</h3>
+      </div>
+
+      <ul class="cards cards--sponsors">
+        <li class="card--sponsor card--sponsor-large">
+          <a class="card card--sponsor-link" rel="external" href="https://assurity.nz">
+            <img src="{{ '/assets/images/sponsors/2023/assurity-logo.png' | url }}" alt="Assurity" />
+          </a>
+        </li>
+      </ul>
+
+      <div class="text-indent">
+        <h3>Silver sponsors</h3>
+      </div>
+
+      <ul class="cards cards--sponsors">
+        <li class="card--sponsor">
+          <a class="card card--sponsor-link" rel="external" href="https://www.runn.io/careers">
+            <img src="{{ '/assets/images/sponsors/2023/runn-logo.png' | url }}" alt="Runn" />
+          </a>
+        </li>
+
+        <li class="card--sponsor">
+          <a class="card card--sponsor-link" rel="external" href="https://datacom.com/nz/en">
+            <img src="{{ '/assets/images/sponsors/2023/datacom-logo.png' | url }}" alt="Datacom" />
+          </a>
+        </li>
+
+        <li class="card--sponsor">
+          <a class="card card--sponsor-link" rel="external" href="https://epi-interactive.com/">
+            <img src="{{ '/assets/images/sponsors/2023/epi-interactive-logo.png' | url }}" alt="Epi-interactive" />
+          </a>
+        </li>
+      </ul>
+
+      <div class="text-indent">
+        <p>Thank you to our amazing sponsors. We wouldn’t be able to do it without you!</p>
+      </div>
+    </section>
+
     {% include 'partials/2023/newsletter-signup.njk' %}
   </main>
 </div>
