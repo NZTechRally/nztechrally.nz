@@ -57,12 +57,15 @@
     </aside>
   </div>
 
-  {%- if content -%}
+  {%- if content or talkReferences.length > 0 -%}
+    {# {%- if content and content | trim | length > 0 and content | striptags | trim | length > 0 -%} #}
     <div id="transcript" class="columns columns-two-thirds talk-page__transcript-wrapper">
-      <div class="column-one card talk-page__transcript">
-        <h2>Transcript</h2>
-        {{ content | safe }}
-      </div>
+      {%- if content -%}
+        <div class="column-one card talk-page__transcript">
+          <h2>Transcript</h2>
+          {{ content | safe }}
+        </div>
+      {%- endif -%}
 
       {%- if talkReferences -%}
         <div class="column-two">
