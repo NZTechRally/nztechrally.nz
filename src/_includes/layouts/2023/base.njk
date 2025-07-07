@@ -49,71 +49,51 @@
       {% getBundle "css" %}
     </style>
   {%- endif %}
+</script>
 
-  {# Fathom website analytics #}
-  <script src="https://cdn.usefathom.com/script.js" data-site="ODKOJCFB" defer="defer"></script>
+<a class="button button-skip-link" href="#mainContent">Skip to main content</a>
 
-  <script>
-    document
-      .querySelectorAll('.track_NZTR2023Photos')
-      .forEach(item => {
-        item.addEventListener('click', event => {
-          fathom.trackEvent('View NZTR 2023 photos');
-        });
-      });
+<div class="page-content-clear-footer">
+  <div class="grid-bg"></div>
 
-    document
-      .querySelectorAll('.track_NZTR2023Videos')
-      .forEach(item => {
-        item.addEventListener('click', event => {
-          fathom.trackEvent('View NZTR 2023 Youtube channel');
-        });
-      });
-  </script>
+  <header class="page-header">
+    <div class="page-wrapper page-header__wrapper">
+      {% if title %}
+        <p class="accent-border site-name">
+          <a class="site-logo-link" href="https://nztechrally.nz">
+            {% svg "logo", { title: "NZ Tech Rally", class: "site-logo" } %}
+          </a>
+        </p>
+      {% else %}
+        <h1 class="accent-border site-name">
+          <a class="site-logo-link" href="https://nztechrally.nz">
+            {% svg "logo", { title: "NZ Tech Rally", class: "site-logo" } %}
+          </a>
+        </h1>
+      {% endif %}
 
-  <a class="button button-skip-link" href="#mainContent">Skip to main content</a>
+      {%- include 'partials/navigation-main.njk' -%}
+    </div>
+  </header>
 
-  <div class="page-content-clear-footer">
-    <div class="grid-bg"></div>
-
-    <header class="page-header">
-      <div class="page-wrapper page-header__wrapper">
-        {% if title %}
-          <p class="accent-border site-name">
-            <a class="site-logo-link" href="https://nztechrally.nz">
-              {% svg "logo", { title: "NZ Tech Rally", class: "site-logo" } %}
-            </a>
-          </p>
-        {% else %}
-          <h1 class="accent-border site-name">
-            <a class="site-logo-link" href="https://nztechrally.nz">
-              {% svg "logo", { title: "NZ Tech Rally", class: "site-logo" } %}
-            </a>
-          </h1>
-        {% endif %}
-
-        {%- include 'partials/navigation-main.njk' -%}
-      </div>
+  <main id="mainContent" class="page-container page-wrapper">
+    <header class="section-label section-label--header accent-border">
+      {% block pageHeader %}{% endblock %}
     </header>
+    {% block pageIntro %}{% endblock %}
+    {% block content %}{% endblock %}
 
-    <main id="mainContent" class="page-container page-wrapper">
-      <header class="section-label section-label--header accent-border">
-        {% block pageHeader %}{% endblock %}
-      </header>
-      {% block pageIntro %}{% endblock %}
-      {% block content %}{% endblock %}
+    {% include 'partials/sponsors.njk' %}
+    {% include 'partials/2023/newsletter-signup.njk' %}
+  </main>
+</div>
 
-      {% include 'partials/sponsors.njk' %}
-      {% include 'partials/2023/newsletter-signup.njk' %}
-    </main>
-  </div>
+{%- include 'partials/footer.njk' -%}
 
-  {%- include 'partials/footer.njk' -%}
+{%- set js -%}
+{% include 'js/hamburgers.js' %}
+{%- endset -%}
 
-  {%- set js -%}
-  {% include 'js/hamburgers.js' %}
-  {%- endset -%}
-
-  <script>
-    {{ js | jsmin | safe }}
-  </script>
+<script>
+  {{ js | jsmin | safe }}
+</script>
