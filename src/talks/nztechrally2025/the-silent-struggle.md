@@ -1,5 +1,4 @@
 ---
-event: "NZ Tech Rally 2025"
 speaker: Claire Sole
 speakerKey: claire-sole
 talkTitle: "The silent struggle: overcoming imposter syndrome and finding my place in tech"

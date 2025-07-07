@@ -1,5 +1,4 @@
 ---
-event: "NZ Tech Rally 2025"
 speaker: Rowan Savage
 speakerKey: rowan-savage
 talkTitle: "Radical Trust & Transparency: A Startup Case Study"

@@ -1,5 +1,4 @@
 ---
-event: "NZ Tech Rally 2025"
 speaker: Patricia Tan & Rod Acevedo
 speakerKey: ["patricia-tan", "rod-acevedo"]
 talkTitle: Leveraging your team's identity

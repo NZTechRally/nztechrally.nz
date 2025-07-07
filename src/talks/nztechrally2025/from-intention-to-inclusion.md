@@ -1,5 +1,4 @@
 ---
-event: "NZ Tech Rally 2025"
 speaker: Sachi Taulelei
 speakerKey: sachi-taulelei
 talkTitle: "From intention to inclusion: more than words on your website"

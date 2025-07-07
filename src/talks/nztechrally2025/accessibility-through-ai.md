@@ -1,5 +1,4 @@
 ---
-event: "NZ Tech Rally 2025"
 speaker: Maia Miller
 speakerKey: maia-miller
 talkTitle: "Accessibility through AI?"

@@ -1,5 +1,4 @@
 ---
-event: "NZ Tech Rally 2025"
 speaker: Bron Thomson
 speakerKey: bron-thomson
 talkTitle: And then the robots came

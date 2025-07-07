@@ -1,5 +1,4 @@
 ---
-event: "NZ Tech Rally 2025"
 speaker: Ben Yu
 speakerKey: ben-yu
 talkTitle: "From developer to architect: the ultimate guide to mastering the transition"

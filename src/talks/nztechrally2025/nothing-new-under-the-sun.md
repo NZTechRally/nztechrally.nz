@@ -1,5 +1,4 @@
 ---
-event: "NZ Tech Rally 2025"
 speaker: Rachel Collingridge
 speakerKey: rachel-collingridge
 talkTitle: "Nothing new under the sun; stability through change"

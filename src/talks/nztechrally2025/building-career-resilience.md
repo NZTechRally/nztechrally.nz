@@ -1,5 +1,4 @@
 ---
-event: "NZ Tech Rally 2025"
 speaker: Julia Bower
 speakerKey: julia-bower
 talkTitle: Building career resilience

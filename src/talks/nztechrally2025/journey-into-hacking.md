@@ -1,5 +1,4 @@
 ---
-event: "NZ Tech Rally 2025"
 speaker: Jim Rush
 speakerKey: jim-rush
 talkTitle: "From developing software to voiding warranties: a journey into hacking"

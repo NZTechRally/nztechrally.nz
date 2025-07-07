@@ -1,5 +1,4 @@
 ---
-event: "NZ Tech Rally 2025"
 speaker: Mark Hrynczak
 speakerKey: mark-hrynczak
 talkTitle: "Transformation at scale: tactics and implementation for levelling up our deployment process"

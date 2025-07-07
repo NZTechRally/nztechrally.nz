@@ -1,5 +1,4 @@
 ---
-event: "NZ Tech Rally 2025"
 speaker: Edward Taylor
 speakerKey: edward-taylor
 talkTitle: How internal platform teams can help create resilient organisations

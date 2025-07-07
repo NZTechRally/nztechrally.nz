@@ -1,5 +1,4 @@
 ---
-event: "NZ Tech Rally 2025"
 speaker: James Espie
 speakerKey: james-espie
 talkTitle: Email sucks! A story Of solving an email deliverability problem

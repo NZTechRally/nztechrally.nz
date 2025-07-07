@@ -1,6 +1,5 @@
 ---
 
-event: "NZ Tech Rally 2025"
 speaker: Ruth McDavitt
 speakerKey: ruth-mcdavitt
 talkTitle: "Beyond short-term gains: future-proofing Aotearoa's talent pipeline"

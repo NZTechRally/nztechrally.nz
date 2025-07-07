@@ -1,5 +1,4 @@
 ---
-event: "NZ Tech Rally 2025"
 speaker: Nav Rao
 speakerKey: nav-rao
 talkTitle: "Hold, fold or walk away: navigating burnout like The Gambler"
