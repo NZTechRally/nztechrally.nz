@@ -7,11 +7,10 @@
 
     <p class="card-profile__info">
       <a class="card-profile__link" href="{{ content.url | url }}">
-        <span class="card-title card-title--talk-name"></span>
-
         <span>
           {{ content.data.firstName }}
           {{ content.data.lastName }}
+          <br>
           {{ content.data.jobTitle }}
           {% if content.data.organisation %}
             @ {{ content.data.organisation }}
