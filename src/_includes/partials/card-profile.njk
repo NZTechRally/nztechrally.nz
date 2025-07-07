@@ -8,21 +8,17 @@
     <p class="card-profile__info">
       <a class="card-profile__link" href="{{ content.url | url }}">
         <span>
-          {{ content.data.firstName }}
-          {{ content.data.lastName }}
-          <br>
+          <strong class="card-title">
+            {{ content.data.firstName }}
+            {{ content.data.lastName }}</strong>
           {{ content.data.jobTitle }}
           {% if content.data.organisation %}
             @ {{ content.data.organisation }}
           {% endif %}
         </span>
 
-        {% if content.data.talkTitle %}
-          <strong>{{ content.data.talkTitle }}</strong>
-        {% endif %}
-
         {% if content.data.role %}
-          <strong>{{ content.data.role }}</strong>
+          {{ content.data.role }}
         {% endif %}
       </a>
     </p>
