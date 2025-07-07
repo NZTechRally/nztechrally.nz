@@ -93,12 +93,6 @@ description: Inclusive spaces for the NZ software community to celebrate, connec
       </h2>
     </div>
 
-    {# <ul class="cards profiles profiles--two-columns">
-      {% for speaker in collections.speakers2025 %}
-        {{ card(speaker) }}
-      {% endfor %}
-    </ul> #}
-
     <ul class="cards profiles profiles--two-columns">
       {% for speaker in collections.speakers2025 %}
         <li class="card card-profile card-profile--horizontal">
@@ -124,10 +118,6 @@ description: Inclusive spaces for the NZ software community to celebrate, connec
                   @ {{ speaker.data.organisation }}
                 {% endif %}
               </span>
-
-              {% if speaker.data.role %}
-                <strong>{{ speaker.data.role }}</strong>
-              {% endif %}
             </a>
           </p>
         </li>
