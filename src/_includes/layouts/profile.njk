@@ -81,15 +81,17 @@
     </div>
   </div>
 
-  <div class="section">
-    <div class="section-label accent-border">
-      <h2 class="section-title">{{ firstName }}'s content</h2>
-    </div>
+  {% if (collections.talks | getTalksBySpeaker(page.fileSlug)) .length > 0 %}
+    <div class="section">
+      <div class="section-label accent-border">
+        <h2 class="section-title">{{ firstName }}'s content</h2>
+      </div>
 
-    <ul class="cards cards-content-link cards-content-link--three-columns">
-      {% for talk in collections.talks | getTalksBySpeaker(page.fileSlug) %}
-        {{ card(talk, type='talk') }}
-      {% endfor %}
-    </ul>
-  </div>
+      <ul class="cards cards-content-link cards-content-link--three-columns">
+        {% for talk in collections.talks | getTalksBySpeaker(page.fileSlug) %}
+          {{ card(talk, type='talk') }}
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
 {% endblock %}
