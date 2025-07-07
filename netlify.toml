@@ -17,6 +17,43 @@
     Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
 
 # Domain aliases and HTTPS redirects
+
+# Serve assets for 2023 subdomain
+[[redirects]]
+  from = "https://2023.nztechrally.nz/assets/*"
+  to = "/assets/:splat"
+  status = 200
+  force = true
+
+# Serve crew pages for 2023 subdomain  
+[[redirects]]
+  from = "https://2023.nztechrally.nz/crew/*"
+  to = "/crew/:splat"
+  status = 200
+  force = true
+
+# Serve speakers pages for 2023 subdomain
+[[redirects]]
+  from = "https://2023.nztechrally.nz/speakers/*"
+  to = "/2023/speakers/:splat"
+  status = 200
+  force = true
+
+# Serve panellists pages for 2023 subdomain
+[[redirects]]
+  from = "https://2023.nztechrally.nz/panellists/*"
+  to = "/2023/panellists/:splat"
+  status = 200
+  force = true
+
+# Serve /2023/ content for 2023.nztechrally.nz subdomain
+[[redirects]]
+  from = "https://2023.nztechrally.nz/*"
+  to = "/2023/:splat"
+  status = 200
+  force = true
+
+# Redirect main domain /2023/ paths to subdomain
 [[redirects]]
   from = "http://nztechrally.nz/2023/*"
   to = "https://2023.nztechrally.nz/:splat"
@@ -29,6 +66,7 @@
   status = 301
   force = true
 
+# Force HTTPS for subdomain
 [[redirects]]
   from = "http://2023.nztechrally.nz/*"
   to = "https://2023.nztechrally.nz/:splat"

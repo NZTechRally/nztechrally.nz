@@ -12,4 +12,18 @@ https://nztechrally.com/* https://nztechrally.nz/:splat 301!
 http://nztechrally.nz/2023/* https://2023.nztechrally.nz/:splat 301!
 https://nztechrally.nz/2023/* https://2023.nztechrally.nz/:splat 301!
 http://2023.nztechrally.nz/* https://2023.nztechrally.nz/:splat 301!
-https://2023.nztechrally.nz/* https://2023.nztechrally.nz/:splat 200
+
+# Serve assets for 2023 subdomain (200 rewrite)
+https://2023.nztechrally.nz/assets/* /assets/:splat 200!
+
+# Serve crew pages for 2023 subdomain (200 rewrite)
+https://2023.nztechrally.nz/crew/* /crew/:splat 200!
+
+# Serve speakers pages for 2023 subdomain (200 rewrite)
+https://2023.nztechrally.nz/speakers/* /2023/speakers/:splat 200!
+
+# Serve panellists pages for 2023 subdomain (200 rewrite)
+https://2023.nztechrally.nz/panellists/* /2023/panellists/:splat 200!
+
+# Serve /2023/ content for 2023.nztechrally.nz subdomain (200 rewrite)
+https://2023.nztechrally.nz/* /2023/:splat 200!
