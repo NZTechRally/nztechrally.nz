@@ -5,3 +5,14 @@
 
 [functions]
   node_bundler = "esbuild"
+
+# Branch deploy settings
+[context.deploy-preview]
+  command = "npm run build"
+
+# Domain aliases
+[[redirects]]
+  from = "https://nztechrally.nz/2023/*"
+  to = "https://2023.nztechrally.nz/:splat"
+  status = 301
+  force = true
