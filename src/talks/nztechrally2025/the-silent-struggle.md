@@ -48,7 +48,8 @@ What you’re about to hear is part personal experience, part light research, an
 
 Let’s crack into it.
 
-What is impostor syndrome?
+**What is impostor syndrome?**
+
 Impostor syndrome is having a moment right now, but it’s not new.
 
 It’s been recognised since the late 1970s, when Dr Pauline Clance and Dr Suzanne Imes published a paper called “The Impostor Phenomenon in High Achieving Women: Dynamics and Therapeutic Intervention.”
@@ -73,7 +74,8 @@ Tom Hanks still wonders when someone’s going to tap him on the shoulder and sa
 
 Impostor syndrome doesn’t discriminate.
 
-Why tech?
+**Why tech?**
+
 So why is impostor syndrome so common in tech?
 
 I have a few theories.
@@ -126,6 +128,8 @@ They can keep us stuck.
 They can keep us silent.
 
 And the longer we stay silent, the more impostor syndrome thrives.
+
+**My journey with impostor syndrome**
 
 Let me share my journey with impostor syndrome, in the hope that we can feel a little less alone together.
 
@@ -273,9 +277,9 @@ But as you can see, it wasn’t smooth sailing from day one.
 
 There are still days where I question myself. And when those days come up, here are a few techniques I use to help:
 
-1. Thoughts vs facts
-   Just because we think something doesn’t mean it’s true.
+**1. Thoughts vs facts**
 
+Just because we think something doesn’t mean it’s true.
 Take a breath. Ask yourself: Where’s the evidence?
 Try to slow down. Challenge the thought.
 
@@ -283,18 +287,20 @@ Even now, in a leadership role, impostor syndrome doesn’t magically disappear�
 
 But when I ask myself, is this a thought or a fact? it becomes like an anchor—something to ground me when I start to spiral. I may not be able to stop the thoughts, but I can fact-check them.
 
-2. Progress over perfection
-   Perfectionism is sneaky.
-   It holds you to impossible standards.
-   Don’t let perfection overshadow your progress.
+**2. Progress over perfection**
+
+Perfectionism is sneaky.
+It holds you to impossible standards.
+Don’t let perfection overshadow your progress.
 
 If you saw Julia’s talk, she illustrated this perfectly with the mountain analogy. Focus on small steps—even if they’re not “perfect”. Because progress is perfect enough.
 
 In my current role, my job is really about connecting with people, asking questions, and being curious. Saying “I don’t know… yet.”
 And that tiny “yet” does so much heavy lifting.
 
-3. Don’t do it alone
-   When you’re deep in the spiral, impostor syndrome whispers sweet, evil nothings into your ear. And the worst thing you can do is keep those thoughts locked in your own head.
+**3. Don’t do it alone**
+   
+When you’re deep in the spiral, impostor syndrome whispers sweet, evil nothings into your ear. And the worst thing you can do is keep those thoughts locked in your own head.
 
 Eventually, when it got really bad, I started opening up—to my husband, to colleagues, to mentors.
 
@@ -312,8 +318,9 @@ Sometimes, it’s about having the courage to ask for help.
 
 Impostor syndrome thrives in isolation—so call it out. And call your crew.
 
-4. Help create the right culture
-   What can you do to help others?
+**4. Help create the right culture**
+
+What can you do to help others?
 
 Create an environment where asking questions is normal. Where mistakes are learning opportunities. Where leaders show vulnerability instead of perfection.
 
@@ -321,35 +328,25 @@ Looking back, one of the reasons I made it through those impostor-heavy chapters
 
 I’m lucky—my current and past workplaces have done this well. And now that I’m in a leadership role, I feel even more responsibility to protect and promote that openness. To support vulnerability, growth, and belonging.
 
-Because here’s the truth:
-
-The way we show up affects how others feel safe to show up, too.
-
+Because here’s the truth: The way we show up affects how others feel safe to show up, too.
 Whether you’re a lead, a senior, or new to the field—you have the power to shape the culture you work in.
-
 And it starts with the small stuff.
 
 I’m not expecting you to walk away today having conquered impostor syndrome. There’s no quick fix. No magical cure.
-
 But there are ways to turn down the volume.
-
 There are ways to shift from feeling stuck in the back seat to being in the driver’s seat—choosing your direction and even picking the music.
 
-And if there’s one thing I’ve learned, it’s this:
-
-Growth isn’t always loud.
-
+And if there’s one thing I’ve learned, it’s this: *Growth isn’t always loud*.
 Sometimes, it looks like quietly showing up.
 It looks like asking for help.
 And it looks like telling that inner voice, “Not today.”
-
 (Yes, I was going to swear there. But I didn’t.)
 
 Impostor syndrome doesn’t mean you’re a fraud.
 
-It means you care.
+*It means you care.
 It means you’re pushing yourself.
-It means you’re growing.
+It means you’re growing.*
 
 So please—share your story.
 Be the reason someone else doesn’t feel so alone in theirs.
