@@ -1,7 +1,6 @@
 const CleanCSS = require("clean-css");
 const { DateTime } = require("luxon");
 const { minify } = require("terser");
-const pluginBundle = require("@11ty/eleventy-plugin-bundle").default;
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const fs = require("fs");
@@ -9,6 +8,9 @@ const fs = require("fs");
 
 module.exports = async function (eleventyConfig) {
   const { RenderPlugin } = await import("@11ty/eleventy");
+  const { default: pluginBundle } = await import(
+    "@11ty/eleventy-plugin-bundle"
+  );
 
   // Store the render functionality for use in shortcodes
   let eleventyInstance;

@@ -1,6 +1,6 @@
 {
   "name": "nztechrally",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Version control for nztechrally.nz",
   "main": "index.js",
   "scripts": {
