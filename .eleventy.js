@@ -1,13 +1,15 @@
 const CleanCSS = require("clean-css");
 const { DateTime } = require("luxon");
 const { minify } = require("terser");
-const pluginBundle = require("@11ty/eleventy-plugin-bundle");
+const pluginBundle = require("@11ty/eleventy-plugin-bundle").default;
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const { EleventyRenderPlugin } = require("@11ty/eleventy");
 const pluginNavigation = require("@11ty/eleventy-navigation");
+const fs = require("fs");
 // const inclusiveLangPlugin = require("@11ty/eleventy-plugin-inclusive-language");
 
-module.exports = function (eleventyConfig) {
+module.exports = async function (eleventyConfig) {
+  const { RenderPlugin } = await import("@11ty/eleventy");
+
   eleventyConfig.addFilter("cssmin", function (code) {
     return new CleanCSS({}).minify(code).styles;
   });
@@ -18,9 +20,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/manifest.json");
 
   eleventyConfig.addPlugin(pluginBundle);
-  eleventyConfig.addPlugin(pluginSyntaxHighlight);
-  eleventyConfig.addPlugin(EleventyRenderPlugin);
+  eleventyConfig.addPlugin(RenderPlugin);
   eleventyConfig.addPlugin(pluginNavigation);
+  eleventyConfig.addPlugin(pluginSyntaxHighlight);
   // eleventyConfig.addPlugin(inclusiveLangPlugin);
 
   eleventyConfig.setServerOptions({
@@ -67,7 +69,7 @@ module.exports = function (eleventyConfig) {
         // Fail gracefully.
         callback(null, code);
       }
-    }
+    },
   );
 
   //  https://github.com/11ty/eleventy/issues/580
@@ -134,13 +136,13 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("getCurrentCrew", (collection, crewAtEvent) => {
     return collection.filter((crew) =>
-      crew.data.crewAtEvent.includes(crewAtEvent)
+      crew.data.crewAtEvent.includes(crewAtEvent),
     );
   });
 
   eleventyConfig.addFilter("getPastCrew", (collection, crewAtEvent) => {
     return collection.filter(
-      (crew) => !crew.data.crewAtEvent.includes(crewAtEvent)
+      (crew) => !crew.data.crewAtEvent.includes(crewAtEvent),
     );
   });
 
@@ -152,7 +154,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("getSpeakersOfTalk", (collection, speakerKey) => {
     return collection.filter((speaker) =>
-      speakerKey.includes(speaker.page.fileSlug)
+      speakerKey.includes(speaker.page.fileSlug),
     );
   });
 
@@ -195,18 +197,12 @@ module.exports = function (eleventyConfig) {
       const filePath = `./src/_includes/svg/${filename}.svg${
         isNjk ? ".njk" : ""
       }`;
-      const engine = svgOptions.hasOwnProperty("engine")
-        ? svgOptions.engine
-        : isNjk
-        ? "njk"
-        : "html"; // HTML engine for vanilla SVG if none is provided
-      const content = eleventyConfig.nunjucksAsyncShortcodes.renderFile(
-        filePath,
-        svgOptions,
-        engine
-      );
-      return await content; // The await required since this is an async function!
-    }
+
+      // For now, just read and return the file content
+      // TODO: Implement proper template rendering for SVG files in Eleventy 3.x
+      const fileContent = fs.readFileSync(filePath, "utf-8");
+      return fileContent;
+    },
   );
 
   return {
