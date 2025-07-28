@@ -10,10 +10,12 @@ const fs = require("fs");
 module.exports = async function (eleventyConfig) {
   const { RenderPlugin } = await import("@11ty/eleventy");
 
+  // Store the render functionality for use in shortcodes
+  let eleventyInstance;
+
   eleventyConfig.addFilter("cssmin", function (code) {
     return new CleanCSS({}).minify(code).styles;
   });
-
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/favicon.ico");
   eleventyConfig.addPassthroughCopy("src/apple-touch-icon.png");
@@ -187,6 +189,17 @@ module.exports = async function (eleventyConfig) {
     return "";
   });
 
+  // Store reference to the configuration for use in shortcodes
+  let renderFunction;
+
+  // Set up a rendering helper for the SVG shortcode
+  eleventyConfig.on(
+    "eleventy.before",
+    ({ runMode, outputMode, inputDir, outputDir }) => {
+      // This runs before Eleventy processes files
+    },
+  );
+
   // https://chriskirknielsen.com/blog/manage-your-svg-files-with-eleventys-render-plugin/#updated-method
   eleventyConfig.addAsyncShortcode(
     "svg",
@@ -197,11 +210,38 @@ module.exports = async function (eleventyConfig) {
       const filePath = `./src/_includes/svg/${filename}.svg${
         isNjk ? ".njk" : ""
       }`;
+      const engine = svgOptions.hasOwnProperty("engine")
+        ? svgOptions.engine
+        : isNjk
+          ? "njk"
+          : "html"; // HTML engine for vanilla SVG if none is provided
 
-      // For now, just read and return the file content
-      // TODO: Implement proper template rendering for SVG files in Eleventy 3.x
+      // Read the file content
       const fileContent = fs.readFileSync(filePath, "utf-8");
-      return fileContent;
+
+      // If the file doesn't need template processing, return as-is
+      if (!isNjk || engine === "html") {
+        return fileContent;
+      }
+
+      // For Nunjucks template processing, use the built-in Nunjucks instance
+      // Import nunjucks and create a minimal environment for rendering
+      const nunjucks = require("nunjucks");
+
+      try {
+        // Create a simple environment for rendering
+        const env = new nunjucks.Environment(
+          new nunjucks.FileSystemLoader("./"),
+        );
+        const rendered = env.renderString(fileContent, svgOptions);
+        return rendered;
+      } catch (error) {
+        console.warn(
+          `SVG template processing failed for ${filename}:`,
+          error.message,
+        );
+        return fileContent; // Fallback to raw content
+      }
     },
   );
 
