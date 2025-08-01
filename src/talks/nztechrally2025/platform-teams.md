@@ -36,12 +36,12 @@ So as I said, I’m now at Kiwibank. I help run the observability team. We run a
 
 So you always gotta start off a talk with a bang. So: definitions!
 
-Internal platform team.
+**Internal platform team.**
 Maybe you saw the title. What on earth does that mean? Internal means the people I’m looking after are members of the same organisation I am. They are software engineers. They’re the product people. They work for the same company I do.
 
 Platform simply means something that people can build on top of. So I run the observability platform. People can build their alerts and monitors and synthetics and things like that on top of my platform to solve their problems.
 
-Resilience and robustness.
+**Resilience and robustness.**
 So we’ve already heard a lot about resilience in some of the keynotes earlier. It’s a very loaded term these days. So I’ll cover my own definition. I like to contrast it against robustness.
 
 Robustness is: how well can you respond to stuff you know about? Like, I know that my app needs to pace more scale. I know we’re gonna get more customers. Can I respond when their customer load doubles? I saw that coming. Can I make my, you know, my microservice — whatever — robust?
@@ -55,13 +55,13 @@ However, resilience by my definition is: how do we respond to what we didn’t k
 
 And the key thing to note is that both of these overlap. If you’re really robust, you’re probably pretty resilient. If you’re really resilient, you’re probably pretty robust — but there are differences.
 
-The last bit of jargon I’ll touch on is socio-technical systems. We all work in socio-technical systems. If you're building resilience, it's key to think of our systems like that. It's not just the technology that matters.
+The last bit of jargon I’ll touch on is **socio-technical systems**. We all work in socio-technical systems. If you're building resilience, it's key to think of our systems like that. It's not just the technology that matters.
 
 Don't think of your technology as just like, “Oh, I write this really nice code and I put all these circuit breakers in and backups and blah, blah, blah. I'm gonna be able to respond to every situation now.” It's not that simple.
 
 You've also got to think of the teams around it — the people who support those systems, how they interact, how you get in contact with them, what their pressures are. So when you're building resilience, don't just think of the technical. Think of the social as well, around it. And we call that a socio-technical system.
 
-So, what builds resilience?
+**So, what builds resilience?**
 
 Again, loaded question! However, like all good 25-minute talks, I will dumb it down and strip away a lot of nuance and focus on what I think is super important. And that's expertise.
 
@@ -75,7 +75,7 @@ But expertise is a very broad term, right? Like, what do you mean when you say e
 
 So I’ll put this into my context. I really like Venn diagrams.
 
-What expertise does my platform team need — and I need?
+**What expertise does my platform team need — and I need?**
 
 Well, obviously, we need expertise in the platform itself. So I run observability platforms. I need to understand how they work. I need to understand what is the better practices to use for them. I need to understand where their limits are, what they can’t do, their weaknesses, what to use. I need that level of expertise to do my job.
 
@@ -83,7 +83,7 @@ As I said, we solve observability problems. So I need to understand observabilit
 
 All these kind of core things that I need to understand — the actual concepts and the theory behind it. Not just how to do it, but when to do it and why to do it.
 
-And lastly, Kiwibank.
+And lastly, **Kiwibank**.
 
 I need to understand the org that I work in. It's a very big, competent banking organisation. There's a huge range of technologies and pressures. There’s no one cookie-cutter solution that I can go and — it’s gonna work across that org.
 
@@ -94,7 +94,7 @@ So that’s the expertise that I need to have in myself and in my team.
 So, how can I grow those areas of expertise?
 That's a lot to learn. And what can I do about gaining those skills?
 
-As you may have guessed from the introduction — learning from incidents. This is a major approach that me and my team use.
+As you may have guessed from the introduction — **learning from incidents**. This is a major approach that me and my team use.
 
 So what does this mean? And then I'll cover why it's important.
 
@@ -105,11 +105,10 @@ But then it doesn't end there. I want to get involved in the post-incident revie
 
 I do everything I can to be involved in these incidents — and my team to be involved.
 
-So why? Why do we love incidents?
+**So why? Why do we love incidents?**
 
 There's a really cool report called the Stella Report. It's just — I think — stellareport.io. Looking at Chris 'cause he might know. And they have this really cool description of incidents.
 They say:
-
 Incidents are highly encoded messages that tell us how our system really works.
 It’s our job to decode those messages.
 
@@ -140,7 +139,7 @@ But if you have someone come in and you're really positive and you're like:
 “Oh, this is such a cool week to learn all this cool information,”
 and “Yeah, like, I’ve been here for myself” — and you see this as this real positive thing rather than a negative thing — it helps you build a really strong relationship with them.
 
-They talk, and you get to build that relationship. It’s kind of like being, you know, bonded by this negative event — and treating it positively really lets you have that far easier way to influence across the org when you have those relationships.
+They talk, and you get to **build that relationship**. It’s kind of like being, you know, bonded by this negative event — and treating it positively really lets you have that far easier way to influence across the org when you have those relationships.
 
 That’s a really good way. I’m an internal platform team. I cannot be successful in isolation. The only way I’m successful is if the people using the platform are successful. I have to be able to influence them — and I have to have those relationships to do that.
 
@@ -156,7 +155,7 @@ What else can I do?
 
 So, I can guarantee you what every internal platform team has — and that is: interrupts.
 
-What do I mean by interrupts?
+**What do I mean by interrupts?**
 I mean, you have users coming up to you and you're like:
 “Hey, how do I do this?”
 “Hey, I see a problem here.”
@@ -206,11 +205,11 @@ So how can I do that?
 
 That is a much harder challenge.
 
-So the focus we did is — we focused on creating community.
+So the focus we did is — we focused on **creating community**.
 
 And the most obvious way that you’d be like:
 “Okay, I need to create community around something — community around a practice?
-Hmm, I should create an observability community of practice.”
+Hmm, I should create an _observability community of practice_.”
 Problem solved.
 
 …Not quite that simple.
@@ -227,7 +226,6 @@ But sadly, actually — not a very good interaction forum.
 It was okay. We got a few people who were the usual people who would interact.
 And lots of people told me afterwards that they really enjoyed it.
 But there was a huge amount of:
-
 someone saying something
 someone saying “any questions?”
 and then just sitting there blankly.
@@ -257,9 +255,7 @@ I was seeing other people do my job — build this community around these public
 
 Having this forum, having it, no automation blocking them from the interaction and having it all be transparent, they knew where to look — really helped us build community.
 
-That's not enough.
-
-I need to build community. That's not enough to help build expertise.
+That's not enough. I need to build community. That's not enough to help build expertise.
 
 What else my team also focuses on — as we heard earlier on the platform team — all my customers have a huge amount of demands on them. They have stakeholders yelling at them for new features. They have incidents, they're firefighting. They have tech debt, they're trying to reduce. They have a part of JIRA — or we don't use JIRA, we use ADO sadly — but they have a pile of tickets, this big.
 
@@ -269,7 +265,7 @@ So I need to focus on making the things that I know they have to do as easily as
 
 And very rarely will I go and try and impose stuff that has more work, could cost more work for them.
 
-And then also it's exploiting slack.
+And then also it's **exploiting slack**.
 
 So what do I mean by exploiting slack?
 
@@ -281,22 +277,22 @@ I know that that is like a small microcosm. And I need to take advantage of that
 
 So my team needs to be probably the true definition of agile. And we need to be like, okay, I'm okay with pushing back on my quarterly plans because my customer has a moment that I need to use. So we need to focus on exploiting that slack when it appears.
 
-Cool. So key takeaways:
+So **key takeaways**:
 
-Resilience is the ability to respond to the unexpected.
+1. Resilience is the ability to respond to the unexpected.
 
-You want to focus on building your team and your internal customers' expertise.
+2. You want to focus on building your team and your internal customers' expertise.
 
-Incidents can be your superpower. Please use them.
-They are very valuable unplanned investments that you've made.
-You might as well get as big a return on them as you humanly possibly can.
+3. Incidents can be your superpower. Please use them.
+   They are very valuable unplanned investments that you've made.
+   You might as well get as big a return on them as you humanly possibly can.
 
-Put a lot of effort into nurturing your community.
-You'll probably be surprised by the different ways that work and don't — but it definitely pays off.
+4. Put a lot of effort into nurturing your community.
+   You'll probably be surprised by the different ways that work and don't — but it definitely pays off.
 
-Focus on creating slack for your internal customers so they have that space to build their expertise.
+5. Focus on creating slack for your internal customers, so they have that space to build their expertise.
 
-Bonus content.
+**Bonus content:**
 
 Now, I don't have Ryan Gosling or anything sadly. But I was going to talk — and I mentioned in my abstract when I submitted this talk (but I assume everyone just submits an abstract but they haven't written the talk, so then it kind of has to organically grow) — but I mentioned I was going to talk about metrics.
 
