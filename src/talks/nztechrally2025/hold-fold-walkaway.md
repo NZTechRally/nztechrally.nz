@@ -14,6 +14,6 @@ featuredImageAlt: "Nav's picture with text: NZ Tech Rally. Hold, fold or walk aw
 featuredImageType: image/jpg
 featuredImageWidth: 1280
 featuredImageHeight: 720
-talkRecordingID:
+talkRecordingID: k8QbGzUsHRY
 talkReferences:
 ---
