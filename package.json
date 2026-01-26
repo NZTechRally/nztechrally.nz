@@ -4,6 +4,7 @@
   "description": "Version control for nztechrally.nz",
   "main": "index.js",
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "start": "eleventy --serve",
     "build": "eleventy",
     "debug": "DEBUG=* eleventy",
@@ -22,17 +23,17 @@
   "homepage": "https://github.com/NZTechRally/nztechrally#readme",
   "dependencies": {
     "@11ty/eleventy": "^3.1.2",
-    "luxon": "^3.7.1",
+    "luxon": "^3.7.2",
     "node-fetch": "^3.3.2"
   },
   "devDependencies": {
-    "@11ty/eleventy-navigation": "^1.0.4",
-    "@11ty/eleventy-plugin-bundle": "^3.0.6",
+    "@11ty/eleventy-navigation": "^1.0.5",
+    "@11ty/eleventy-plugin-bundle": "^3.0.7",
     "@11ty/eleventy-plugin-inclusive-language": "^1.0.3",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
     "clean-css": "^5.3.3",
-    "eslint": "^9.32.0",
-    "prettier": "^3.6.2",
-    "terser": "^5.43.1"
+    "eslint": "^9.39.2",
+    "prettier": "^3.8.1",
+    "terser": "^5.46.0"
   }
 }
