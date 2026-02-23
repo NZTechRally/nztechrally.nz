@@ -10,10 +10,10 @@
 const hamburger = document.getElementById("globalNavigationButton");
 // On click
 hamburger.addEventListener("click", function () {
-  let expanded = this.getAttribute("aria-expanded") === "true" || false;
+  const expanded = this.getAttribute("aria-expanded") === "true" || false;
   this.setAttribute("aria-expanded", !expanded);
   // Toggle class "is-active"
   hamburger.classList.toggle("is-active");
-  let menu = this.nextElementSibling;
+  const menu = this.nextElementSibling;
   menu.hidden = !menu.hidden;
 });
