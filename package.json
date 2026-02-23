@@ -8,7 +8,8 @@
     "start": "eleventy --serve",
     "build": "eleventy",
     "debug": "DEBUG=* eleventy",
-    "lint": "prettier src"
+    "lint": "biome check src",
+    "format": "biome format --write src"
   },
   "repository": {
     "type": "git",
@@ -31,9 +32,8 @@
     "@11ty/eleventy-plugin-bundle": "^3.0.7",
     "@11ty/eleventy-plugin-inclusive-language": "^1.0.3",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
+    "@biomejs/biome": "^2.4.4",
     "clean-css": "^5.3.3",
-    "eslint": "^9.39.3",
-    "prettier": "^3.8.1",
     "terser": "^5.46.0"
   }
 }
