@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
+    "prepare": "lefthook install",
     "start": "eleventy --serve",
     "build": "eleventy",
     "debug": "DEBUG=* eleventy",
@@ -27,6 +28,9 @@
     "luxon": "^3.7.2",
     "node-fetch": "^3.3.2"
   },
+  "pnpm": {
+    "onlyBuiltDependencies": ["lefthook"]
+  },
   "devDependencies": {
     "@11ty/eleventy-navigation": "^1.0.5",
     "@11ty/eleventy-plugin-bundle": "^3.0.7",
@@ -34,6 +38,7 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
     "@biomejs/biome": "^2.4.4",
     "clean-css": "^5.3.3",
+    "lefthook": "^2.1.1",
     "terser": "^5.46.0"
   }
 }

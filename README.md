@@ -26,3 +26,19 @@ pnpm start
 ```
 
 Then navigate to [http://localhost:8080/](http://localhost:8080/), to view local version on a browser.
+
+## Code quality
+
+[Biome](https://biomejs.dev/) handles both linting and formatting. A pre-commit hook runs automatically via [Lefthook](https://lefthook.dev/) — commits will be blocked if there are lint or formatting issues.
+
+Check for issues:
+
+```shell
+pnpm lint
+```
+
+Auto-fix formatting:
+
+```shell
+pnpm format
+```
