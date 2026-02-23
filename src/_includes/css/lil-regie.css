@@ -94,6 +94,7 @@ a.booking-form-header__attendees:visited {
   font-family: var(--typeface-display);
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+  /* biome-ignore lint/complexity/noImportantStyles: overrides style set by Lil Regie */
   line-height: var(--line-height-display) !important;
 }
 
@@ -245,6 +246,7 @@ attendee__eventlet-subtotal {
 }
 
 .extras .small.subdued[style] {
+  /* biome-ignore lint/complexity/noImportantStyles: overrides inline style set by Lil Regie */
   margin-bottom: 0 !important;
   color: var(--colour-body-text);
 }
@@ -401,7 +403,7 @@ label {
   padding-left: 94px;
   background: var(--colour-pink)
     url(/assets/lilregie/regie-error-ddf6686b85a6600705026e62a3ce9f82c9f79c8a9b0ec2e4590f881f366a4136.png)
-    no-repeat 14px 14px !important;
+    no-repeat 14px 14px;
 }
 
 label[for="copy_booking_details"] {
@@ -452,9 +454,11 @@ label[for="copy_booking_details"] {
 }
 
 .js-showmore-content[style] {
+  /* biome-ignore lint/complexity/noImportantStyles: overrides inline style set by Lil Regie */
   height: auto !important;
 }
 
 .js-showmore-trigger {
+  /* biome-ignore lint/complexity/noImportantStyles: overrides inline style set by Lil Regie */
   display: none !important;
 }

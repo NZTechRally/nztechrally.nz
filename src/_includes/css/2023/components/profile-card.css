@@ -97,7 +97,9 @@
 }
 
 .card .card-profile__link:focus-visible::before {
-  box-shadow: 0 0 0 2px var(--colour-blue), 0 0 0 5px var(--colour-pink);
+  box-shadow:
+    0 0 0 2px var(--colour-blue),
+    0 0 0 5px var(--colour-pink);
   outline: 1px solid transparent;
   transition: box-shadow 0.1s;
 }

@@ -102,7 +102,9 @@
 }
 
 .card .card-content-link__link:focus-visible::before {
-  box-shadow: 0 0 0 2px var(--colour-grey), 0 0 0 5px var(--colour-orange);
+  box-shadow:
+    0 0 0 2px var(--colour-grey),
+    0 0 0 5px var(--colour-orange);
   outline: 1px solid transparent;
   transition: box-shadow 0.1s;
 }

@@ -292,7 +292,9 @@ a.button:hover {
 }
 
 :focus-visible {
-  box-shadow: 0 0 0 0px transparent, 0 0 0 3px var(--colour-pink);
+  box-shadow:
+    0 0 0 0px transparent,
+    0 0 0 3px var(--colour-pink);
   outline: 1px solid transparent;
   transition: box-shadow 0.1s;
 }
@@ -325,7 +327,9 @@ button:focus-visible,
 .button:focus-visible,
 textarea:focus-visible,
 select:focus-visible {
-  box-shadow: 0 0 0 2px var(--colour-blue), 0 0 0 5px var(--colour-pink);
+  box-shadow:
+    0 0 0 2px var(--colour-blue),
+    0 0 0 5px var(--colour-pink);
   outline: 1px solid transparent;
   transition: box-shadow 0.1s;
   z-index: 1;
