@@ -1,9 +1,8 @@
 {
   "recommendations": [
+    "biomejs.biome",
     "editorconfig.editorconfig",
     "eseom.nunjucks-template",
-    "esbenp.prettier-vscode",
-    "okitavera.vscode-nunjucks-formatter",
     "ronnidc.nunjucks"
   ]
 }

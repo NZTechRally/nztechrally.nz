@@ -1,9 +1,10 @@
 {
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.defaultFormatter": "biomejs.biome",
   "[nunjucks]": {
-    "editor.defaultFormatter": "okitavera.vscode-nunjucks-formatter"
+    "editor.formatOnSave": false,
+    "editor.formatOnPaste": false
   },
   "emmet.includeLanguages": {
     "njk": "html",
@@ -16,7 +17,5 @@
       "strings": "off",
       "other": "off"
     }
-  },
-  "nunjucksFormat.spaceclose": true,
-  "nunjucksFormat.commline": true,
+  }
 }
