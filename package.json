@@ -29,7 +29,13 @@
     "node-fetch": "^3.3.2"
   },
   "pnpm": {
-    "onlyBuiltDependencies": ["lefthook"]
+    "onlyBuiltDependencies": [
+      "lefthook"
+    ],
+    "overrides": {
+      "minimatch@>=10.0.0 <10.2.3": ">=10.2.3",
+      "liquidjs@<10.25.0": ">=10.25.0"
+    }
   },
   "devDependencies": {
     "@11ty/eleventy-navigation": "^1.0.5",
