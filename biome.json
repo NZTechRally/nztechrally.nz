@@ -1,7 +1,13 @@
 {
   "$schema": "https://biomejs.dev/schemas/2.4.4/schema.json",
   "files": {
-    "includes": ["**", "!dist", "!src/_includes/css/normalize.css"]
+    "includes": [
+      "**",
+      "!dist",
+      "!src/_includes/css/normalize.css",
+      "!src/_includes/css/components/hamburger.css",
+      "!src/_includes/css/2023/components/hamburger.css"
+    ]
   },
   "linter": {
     "enabled": true,
