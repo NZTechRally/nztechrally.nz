@@ -2,6 +2,7 @@
 // https://andrewstiefel.com/netlify-functions-email-subscription/
 
 import fetch from "node-fetch";
+
 const { SITE_EDM_API_KEY, NZTR_NEWSLETTER_LIST_ID } = process.env;
 
 exports.handler = async (event) => {
@@ -20,10 +21,10 @@ exports.handler = async (event) => {
         tags: ["NZTR website"],
         subscribed: "true",
       }),
-    }
+    },
   );
 
-  let responseText = await response.text();
+  const responseText = await response.text();
 
   return {
     statusCode: 200,
