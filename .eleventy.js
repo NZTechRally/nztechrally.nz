@@ -3,21 +3,22 @@ const { DateTime } = require("luxon");
 const { minify } = require("terser");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
-const fs = require("fs");
+const fs = require("node:fs");
 // const inclusiveLangPlugin = require("@11ty/eleventy-plugin-inclusive-language");
 
-module.exports = async function (eleventyConfig) {
+module.exports = async (eleventyConfig) => {
   const { RenderPlugin } = await import("@11ty/eleventy");
   const { default: pluginBundle } = await import(
     "@11ty/eleventy-plugin-bundle"
   );
 
   // Store the render functionality for use in shortcodes
-  let eleventyInstance;
+  let _eleventyInstance;
 
-  eleventyConfig.addFilter("cssmin", function (code) {
-    return new CleanCSS({}).minify(code).styles;
-  });
+  eleventyConfig.addFilter(
+    "cssmin",
+    (code) => new CleanCSS({}).minify(code).styles,
+  );
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/favicon.ico");
   eleventyConfig.addPassthroughCopy("src/apple-touch-icon.png");
@@ -62,23 +63,20 @@ module.exports = async function (eleventyConfig) {
     showVersion: false,
   });
 
-  eleventyConfig.addNunjucksAsyncFilter(
-    "jsmin",
-    async function (code, callback) {
-      try {
-        const minified = await minify(code);
-        callback(null, minified.code);
-      } catch (err) {
-        console.error("Terser error: ", err);
-        // Fail gracefully.
-        callback(null, code);
-      }
-    },
-  );
+  eleventyConfig.addNunjucksAsyncFilter("jsmin", async (code, callback) => {
+    try {
+      const minified = await minify(code);
+      callback(null, minified.code);
+    } catch (err) {
+      console.error("Terser error: ", err);
+      // Fail gracefully.
+      callback(null, code);
+    }
+  });
 
   //  https://github.com/11ty/eleventy/issues/580
   eleventyConfig.addNunjucksFilter("absoluteUrl", (href, base) => {
-    let { URL } = require("url");
+    const { URL } = require("node:url");
     return new URL(href, base).toString();
   });
 
@@ -182,7 +180,7 @@ module.exports = async function (eleventyConfig) {
   });
 
   eleventyConfig.addShortcode("renderlayoutblock", function (name) {
-    return (this.page.layoutblock || {})[name] || "";
+    return this.page.layoutblock?.[name] || "";
   });
 
   eleventyConfig.addPairedShortcode("layoutblock", function (content, name) {
@@ -192,60 +190,58 @@ module.exports = async function (eleventyConfig) {
   });
 
   // Store reference to the configuration for use in shortcodes
-  let renderFunction;
+  let _renderFunction;
 
   // Set up a rendering helper for the SVG shortcode
   eleventyConfig.on(
     "eleventy.before",
-    ({ runMode, outputMode, inputDir, outputDir }) => {
+    ({
+      runMode: _runMode,
+      outputMode: _outputMode,
+      inputDir: _inputDir,
+      outputDir: _outputDir,
+    }) => {
       // This runs before Eleventy processes files
     },
   );
 
   // https://chriskirknielsen.com/blog/manage-your-svg-files-with-eleventys-render-plugin/#updated-method
-  eleventyConfig.addAsyncShortcode(
-    "svg",
-    async function (filename, svgOptions = {}) {
-      const isNjk = svgOptions.hasOwnProperty("isNjk")
-        ? svgOptions.isNjk
-        : true;
-      const filePath = `./src/_includes/svg/${filename}.svg${
-        isNjk ? ".njk" : ""
-      }`;
-      const engine = svgOptions.hasOwnProperty("engine")
-        ? svgOptions.engine
-        : isNjk
-          ? "njk"
-          : "html"; // HTML engine for vanilla SVG if none is provided
+  eleventyConfig.addAsyncShortcode("svg", async (filename, svgOptions = {}) => {
+    const isNjk = Object.hasOwn(svgOptions, "isNjk") ? svgOptions.isNjk : true;
+    const filePath = `./src/_includes/svg/${filename}.svg${
+      isNjk ? ".njk" : ""
+    }`;
+    const engine = Object.hasOwn(svgOptions, "engine")
+      ? svgOptions.engine
+      : isNjk
+        ? "njk"
+        : "html"; // HTML engine for vanilla SVG if none is provided
 
-      // Read the file content
-      const fileContent = fs.readFileSync(filePath, "utf-8");
+    // Read the file content
+    const fileContent = fs.readFileSync(filePath, "utf-8");
 
-      // If the file doesn't need template processing, return as-is
-      if (!isNjk || engine === "html") {
-        return fileContent;
-      }
+    // If the file doesn't need template processing, return as-is
+    if (!isNjk || engine === "html") {
+      return fileContent;
+    }
 
-      // For Nunjucks template processing, use the built-in Nunjucks instance
-      // Import nunjucks and create a minimal environment for rendering
-      const nunjucks = require("nunjucks");
+    // For Nunjucks template processing, use the built-in Nunjucks instance
+    // Import nunjucks and create a minimal environment for rendering
+    const nunjucks = require("nunjucks");
 
-      try {
-        // Create a simple environment for rendering
-        const env = new nunjucks.Environment(
-          new nunjucks.FileSystemLoader("./"),
-        );
-        const rendered = env.renderString(fileContent, svgOptions);
-        return rendered;
-      } catch (error) {
-        console.warn(
-          `SVG template processing failed for ${filename}:`,
-          error.message,
-        );
-        return fileContent; // Fallback to raw content
-      }
-    },
-  );
+    try {
+      // Create a simple environment for rendering
+      const env = new nunjucks.Environment(new nunjucks.FileSystemLoader("./"));
+      const rendered = env.renderString(fileContent, svgOptions);
+      return rendered;
+    } catch (error) {
+      console.warn(
+        `SVG template processing failed for ${filename}:`,
+        error.message,
+      );
+      return fileContent; // Fallback to raw content
+    }
+  });
 
   return {
     dir: {
