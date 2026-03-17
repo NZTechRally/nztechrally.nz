@@ -33,6 +33,7 @@
       "lefthook"
     ],
     "overrides": {
+      "@11ty/recursive-copy": "5.0.0",
       "minimatch@>=10.0.0 <10.2.3": ">=10.2.3",
       "liquidjs@<10.25.0": ">=10.25.0"
     }
@@ -42,9 +43,9 @@
     "@11ty/eleventy-plugin-bundle": "^3.0.7",
     "@11ty/eleventy-plugin-inclusive-language": "^1.0.3",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
-    "@biomejs/biome": "^2.4.4",
+    "@biomejs/biome": "^2.4.7",
     "clean-css": "^5.3.3",
-    "lefthook": "^2.1.1",
-    "terser": "^5.46.0"
+    "lefthook": "^2.1.4",
+    "terser": "^5.46.1"
   }
 }
